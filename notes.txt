@@ -1,0 +1,4477 @@
+1. Attribute of an element enhances it's functionality.
+2. Block elements:
+   <p>-Paragraph
+
+Table
+3. Colspan - The number of columns the <th> or <td> will take.
+   Rowspan - The number of columns the <th> or <td> will take.
+4. <caption> - Give heading to the table.
+5. <td> - Table Data
+6. <th> - Table heading
+
+List
+7. There are 3 types of list:
+ a. Ordered List
+ b. Unordered List
+ c. Defination List
+   dl - Definition List
+   dt - Definition Term
+   dd - Definition Definition
+
+Core Web Vitals
+8. CLS - Cumulative Layout Shift (Should be less)
+9. LCP - Largest Contentful Paint 
+         The largest content should load as quickly as possible for better user experience.
+         LCP Score should be 2.5 seconds.
+10. FID - First Input Delay
+          The time taken once we input(e.g. Submit button) something into the web page.
+          FID score should be 100 milliseconds
+11. Title of the page should display quickly and page appropriate
+
+Forms
+12. The 'id' of input tag is same as 'for' of label tag.
+13. Necessary pairs in HTML form -
+    a. Label-Input
+    b. Select - Option 
+14. The key-value pair for a particular element goes through name=" " .
+15. "Required" for mandatory filling out a particular field in a form.
+
+Inline and Block elements
+16. Inline - These elements do not start from newline and doesn't take up the whole width, they take up as much space as they required,
+    Block - These elements start from a new line and takes up the whole screen width.
+
+Inline :- 
+<a>
+<abbr>
+<acronym>
+<button>
+<br>
+<big>
+<bdo>
+<b>
+<cite>
+<code>
+<dfn>
+<i>
+<em>
+<img>
+<input>
+<kbd>
+<label>
+<map>
+<object>
+<output>
+<tt>
+<time>
+<samp>
+<script>
+<select>
+<small>
+<span>
+<strong>
+<sub>
+<sup>
+<textarea>
+
+Block :- 
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6> - Headings
+<p> - Paragraphs
+<hr> - Horizontal rule
+<address> - Address information
+<article> - Article content
+<aside> - Sidebar content
+<blockquote> - Block quotations
+<canvas> - Drawing area
+<dd> - Description in a description list
+<div> - Generic container
+<dl> - Description list
+<dt> - Term in a description list
+<fieldset> - Group of related form elements
+<figcaption> - Caption for a figure
+<figure> - Image or media with a caption
+<footer> - Footer of a section or page
+<form> - HTML form
+<header> - Header of a section or page
+<li> - List item
+<main> - Main content of a document
+<nav> - Navigation links
+<noscript> - Alternate content when JavaScript is not enabled
+<ol> - Ordered list
+<ul> - Unordered list
+<pre> - Preformatted text
+<section> - Standalone section in a document
+<table> - Table
+<video> - Video content
+
+ID and Classes
+17. ID and Classes are attributes of an element.
+18. ID is unique to an element
+19. Numerous elements can have same class and same class can have numerous elements.
+
+Video
+20. Controls - Video element has a 'controls' attribute for play, pause and volume option.
+21. Autoplay - automatically plays the video when page is loaded.
+22. Loop - It plays the video on repeat.
+23. Muted - To keep the video on mute.
+24. Poster - It works as a thumbnail on the video.
+
+Audio
+25. Controls - Audio element has a 'controls' attribute for play, pause and volume option.
+26. Autoplay - automatically plays the Audio when page is loaded.
+27. Loop - It plays the Audio on repeat.
+28. Muted - To keep the Audio on mute.
+29. Preload - It specifies how an audio will be loaded onto a page.
+    a. None - The audio will not be preloaded and the browser will only load the audio when the play button is clicked.
+    b. metadata - Only the audio's metadata will be loaded.
+    c. auto - The video will be loaded automatically by the browser.
+
+SVG(Scalable Vector Graphics)
+30. xmlns="http://www.w3.org/2000/svg" putting this attribute value pair is very important for an importing an external SVG file into HTML page.
+
+iFrames
+31. Using iFrames we can embed one website inside another.
+
+Semantic TAGS(Introduced from HTML5)
+32. Adding semnatic tags helps in SEO by the search engine and ranks the website.
+33. <header> - Represents top section of the website which includes headings, logos, navigation.
+34. <nav> - Navigation bar
+35. <article> - Includes self contented piece of content.
+36. <aside> - Contains content aside from the content it is placed in.
+37. <footer> - Represents the footer of a web page, usually containing copyright information and contact details.
+38. <figure> and <figcaption> - Used for embedding images, diagrams, or charts, along with a caption.
+39. <main> - Signifies the main content area of a web page.
+40. <time> - Used to represent time-related information, like dates and times.
+
+HTML Entities
+41. HTML Entities are used to represent symbols that may collide while writing the HTML syntax.
+42. &lt;  for <
+43. &gt;  for >
+44. &amp; for &
+45. &nbsp; for a non-breaking space
+46. &copy; for ©
+47. <pre> - One can use the pre tag to write and display anything as it is.
+48. <blockquote> - For writing quotations.
+
+
+                                                          CSS
+49. CSS provides styling to the Web page.
+50. Single selector :
+
+    div {                   /* Div is the selector here. */
+            color: brown;   /* color is the property here and brown is the value */
+        }
+52. Multiple selctors :
+ 
+        div,span {      /* Div and span are the selectors here. */
+            color: red; /* color is the property here and brown is the value */
+        }
+53. There are 3 ways to add CSS to a HTML page:
+    a. Inline CSS
+    b. Internal CSS
+    c. External CSS
+54. Inline CSS - Can be added using style attribute.
+
+    <h1 style="color: yellow; background-color: red;">Three ways to add CSS to HTML</h1>
+
+55. Internal CSS - Can be added using style tag.
+
+    <style>
+        h1 {
+            color: yellow;
+            background-color: red;
+        }
+    </style>
+
+56. External CSS - Create a .css file and link it to the HTML page using link tag.
+
+<link rel="stylesheet" href="style.css"> - Write this in the head of the HTML file.
+
+h1 {
+    color: yellow;
+    background-color: red;      - Write this in the .css file.
+}
+
+57. Types of selectors -
+    a.  Element selector 
+        div {
+            background-color: red; 
+        }
+    b.  Class selector
+         .red{
+            color: red;
+        }
+    c.  Id Selector
+         #green{
+            color: green;
+        }
+    d.  Child Selector
+         div > p{
+            color: blue;
+         }
+    e.  Descendent element 
+         div span{
+            color: orange;
+         }
+    f.  Universal Selector
+        *{
+          color: blue;
+         } 
+    g.  Attribute selector
+        [data-x=a]{    
+          color: maroon;
+        }
+        'data-x' is the attribute whose value is 'a'.
+    h.  Select all elements inside an container element
+        div *{              /*Turns the background-color of all elements inside the div container to red. */
+            background-color: red;
+        }
+    i.  Pseudo Selectors
+        A. a:active{
+           background-color: red;
+           }
+        B. a:visited{
+           color: yellow;
+           }
+        C. a:link{
+           color: brown;
+           }
+        D. a:hover{
+           color: pink;
+           }
+        E. p:first-child{  /* Turns the color of paragraph element  to wherever <p> element is the first child of it's descendent. */
+           color: aqua;
+           }
+        F. p:nth-child(2){
+           color: aqua;
+           }
+        G. p::first-line{ /* First line of the paragraph element turns yellow */
+           color: yellow;
+           }
+        H. p:nth-child(even){ /* Turns the background color of all the <p> elements to yellogreen whoever is in the even position. */
+           background-color: yellowgreen;
+           }
+        I. p:nth-last-child(2){ /* Turns the background-color of 2nd <P> element from last to yellow.
+           background-color: yellow;
+           }
+    j. Grouping of selectors
+       p, div, h1{  /* Turns the text color of <p>, <div> and <h1> element to purple.
+       color: purple;
+       }
+    k. Pseudo elements 
+       A. p::before{ /* Add "hello mam" content before the <p> element.
+          content: "Hello mam";
+          }
+       B. p::after{
+          content: "Hello beautiful";
+          }
+    l. Upon Selection
+       ::selection{ /* Upon selecting any text in the HTML page the text color turns aqua and background-color turns black.
+        background-color: black;
+        color: aqua;
+        }
+    m. First Letter
+       p::first-letter{  /*The first letter of any <p> element turns to palevioletred color.
+       color: palevioletred;
+       }
+    l. Targeting placeholder of <input> tag
+       input::placeholder{ /* The placeholder value of the input tag turns it's color to brown. */
+       color: brown;
+       }
+
+CSS Box Model
+58. Every element inside CSS is a Box Model.
+59. Every element has margin, border, padding and content.
+   
+    Margin ( Border ( Padding ( Content
+60. Total Height = Content height + top padding + bottom padding + top border + bottom border
+ 
+    Total Width = Content width + left padding + right padding + left border + right border
+
+    CASE-1
+    .box{
+        height: 200px;
+    }
+
+    Then: 
+    Total Height = Content height(200px) + top padding + bottom padding + top border + bottom border
+
+    CASE-2
+    .box{
+        height: 200px;
+        box-sizing: border-box;
+    }
+
+    Then:
+    Total Height(200px) = Content height + top padding + bottom padding + top border + bottom border
+61. Margin collapse - When margin of two consecutive top and bottom elements overlaps then the disctance between the two elements will be the greater margin.
+
+Fonts, Text Properties
+62. font-family : For adding the type of font.
+63. Google fonts : This can be used and can be added to the HTML page by 2 ways-
+                   a. Using import
+                   b. Using link tag
+64. font-size : It determines the size of the letters.
+65. Deafult size of <h1> is 32px.
+66. Default size of <p> is 16px.
+67. font-weight : It determine the thickness of the letters.
+68. line-height : It determines the space between the two vertically consecutive lines.
+69. Default line height is 1.2.
+70. letter-spacing : It determines the space between two letters.
+71. text-transform : Writes the text in uppercase or lowercase.
+                     capitalize
+                     lowercase
+                     uppercase
+72. text-decoration: underline or overline
+73. text-decoration-color: Determines if the underline or overline will be of which color.
+74. text-decoration-style: Determines if it should be soild, dotteed, wavy, dashed etc.
+75. text-decoration-thickness: It determines the thickness of the underline or overline.
+76. text-indent: It adds indentation to the text.
+
+Color Properties
+77. Color can be repersented by:
+    a. Color keywords.
+    b. RGB(Red, Green, Blue)
+       White - RGB(255, 255, 255)
+       Black - RGB(0,0,0)
+    c. RGBA(Red, Green, Blue, alpha)
+       alpha - opacity
+    d. HSL(Hue, Saturation, Lightness)
+    e. HSLA
+    f. Hex color code
+
+Cascade Algorithm
+78. Position and Order - If there are similar selectors then the selectors that comes at the end is given the priority and it gets applied to the element.
+
+79. Specificity - 
+    Inline style > Id selector > Attribute/Class selector > Element selector > Universal Selector
+
+80. Origin - User Agent Stylesheet, these stylesheets are given by the browser.
+
+81. Important - If we want a particular rule to be prioritised at all costs in the stylesheet we can use !important tag with it.
+
+{color:red !important;}
+
+Specificity Calculation
+82. To calculate specificity, assign a value to each part of the 
+    selector:
+
+    a.Universal Selector: 0
+    b.Element selectors and pseudo-elements: 1
+    c.Class selectors, attribute selectors, and pseudo-classes: 10
+    d.ID selectors: 100
+    e.Inline styles: 1000
+    f.!important: 10000
+
+Example:
+
+a.harryclass.rohan-class[href]:hover {
+  color: red;
+}
+
+a(Element selector) = 1
+harryclass(class selector) = 10
+rohan-class(class selector) = 10
+href(attribute selector) = 10
+hover(pseudo class selector) = 10
+
+specificity = 1+10+10+10+10 = 41
+
+83. More is the specificity more is the chances of the CSS to get applied.
+84. Mostly try to use the class selectors.
+
+Sizing
+85. 1 inch = 96 pixel
+86. 100vw = 100% of the view port width.
+87. 100vh = 100% of the view port height.
+88. When we set width:100vw then it takes the width of the whole screen of the device.
+89. For block elements:
+    margin: auto; - To put the element at the center.
+90. For inline element we can't set width nor we can make margin auto.
+91. 1 em = 1 * given/default/inherited font-size
+92. Default font-size = 16px
+93. font-size is a inherited attribute.
+
+    .container {
+            font-size: 18px;
+        }
+    .container p{
+        font-size: 2em;  /*The font-size becomes 2*18=36px as font-size gets inherited*/
+    }
+
+    The final font-size of the paragraph element inside container is 36px.
+94. <html> is the root element in HTML.
+95. rem( root em)
+    1 rem = 1 * font-size allocated to root element
+96. In a device if:
+    a. height > width
+       then,
+       vmin = width/vw
+       vmax = height/vh
+
+    b. height < width
+       then,
+       vmin = height/vh
+       vmax = width/vw
+97. On phone:
+     vmin = width
+     vmax = height
+
+    On monitor:
+     vmin = height
+     vmax = width
+98. min-width : Sets the minimum width of an element.
+99. max-width : Sets the maximum width of an element.
+100. width = 50%; It means 50% of the width of parent.
+
+Display property
+101. The display properties tells how an element will be displayed on the website.
+102. To convert a block element to inline element we must set:
+     display: inline;
+103. Inline elements ignores width, height, padding top, padding bottom, margin top and margin bottom.
+104. Inline elements considers padding left, padding right, margin left and margin right.
+105. For width, height, padding top, padding bottom, margin top and margin bottom to work for inline elements we must set:
+     display: inline-block;
+106. display:none; - The element and the space it has/ woukd have occupied gets hidden.
+107. visbility: hidden; - The element gets hidden but it still takes up the space on the website.
+
+Shadows
+108. To add shadow to the element we use box-shadow property.
+109. box-shadow: h-offset v-offset blur spread color inset;
+      a. h-offset and v-offset: Determines the shadow's horizontal and 
+      b. vertical position.
+      c. blur: The larger the value, the blurrier the shadow.
+      d. spread: Expands or shrinks the shadow size.
+      e. color: Defines the shadow color.
+      f. inset: Makes the shadow inner.
+110. To add shadow to the text we use text-shadow property.
+111. text-shadow: h-offset v-offset blur color;
+112. Outline - It is a line that is drawn around elements, outside the borders.
+113. outline: width style color;
+114. Difference between Outline and Border:
+     a. Position: Outlines don't take up space; they're drawn around the element, outside of any border.
+     b. Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+     c. Width: Borders can have varying widths on different sides, outlines have a uniform width.
+     d. Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot.
+
+List styling
+115. To remove the marker from each list item we can use:
+     list-style: none;
+116. The marker is not included in <li>. To include it we can use:
+     list-style-position: inside;
+117. To use image as marker:
+      list-style-image: url();
+118. To change the marker type:
+      list-style-type: disc;
+
+CSS Overflow
+119. If the content inside the container is more then the content overflows from the container. Then we can use CSS Overflow property to add a horizontal or vertical scroll bar to adjust it.
+
+120. overflow: visible - This makes the whole text visible irrespective of the container size.
+               auto - Adds the scroll bar whenever necessary
+               scroll - It adds an automatic scroller in the container so for the seeing the content it can be scrolled without affecting the container dimensions.
+               hidden - It hides the content which doesn’t fit the box.
+
+CSS Position property
+121. position: static; - For any element by default position is static.
+122. With position static we can't apply z-index, top, bottom, left or right.
+123. Position: relative; - Here the element gets position with relative to it's original deafult position.
+124. With position relative or absolute we can apply z-index, top, bottom, left or right.
+125. Position: absolute; - The element gets position ( top, bottom, left, right) with respect to it's nearest positioned ancestor.
+126. Position: fixed; - The element is fixed according to it's top, bottom, left, right value irrespective of any other conditions.
+127. Position: sticky; - Position sticky is a hybrid between 'relative' and 'fixed'. It allows an element to become "stuck" to the top or 
+     bottom of its container when scrolling, but it behaves like relative positioning within the container until it reaches a specified 
+     offset.
+     Until it's get stuck to top, bottom, left or right it act as an relative and gets scrolled.
+     Once it gets stuck it act as an fixed element.
+128. Exception: Transform, filter or perspective properties can also make the element look as if it is positioned.
+129. More the z-index more above will be the element.
+
+CSS Variables
+130. CSS Variables can be used in case of the repeatation of same property again and again.
+131. Declaring global variables:
+     :root{
+           --color: red;
+           --secolor: blue;
+        }
+132. To use the variables we must declare var() function.
+     background-color: var(--color);
+     color: var(--secolor);
+133. For declaring local variables:
+     ul li:first-child{
+        --color: red;
+        background-color: var(--color);
+     }
+134. If variable not found then:
+     background-color: var(--color, blue);
+
+Media Queries
+135. Media queries are used for making the websites responsive.
+136. Syntax:
+     @media not|only mediatype and (media feature) and (media feature) {
+        CSS-Code;
+     }
+
+     @media only screen and (orientation: landscape){
+            .box{
+                border: 2px solid blue;
+            }
+     }
+     Example:
+     @media only screen and (min-width: 455px) {
+            body {
+                background-color: blue;
+            }
+        }
+    For screen with width more than and equal to 455px the background color will be red.
+137. min-width: 455px; - For width more than or equal to 455px.
+138. max-width: 455px; - For width less than or equal to 455px.
+
+CSS Float and Clear
+139. float: left; - When an element is set to float left then it becomes left align and allow other contents to take up space on her right.
+140. float: right; - When an element is set to float right then it becomes right align and allow other contents to take up space on her left.
+141. display: flow-root; - An element with it's float property set gets overflow from it's container. To help itself accomodate inside the container we set:
+display: flow-root; in it's parent.
+142. clear: right; - When we set this the element doesn't want any element to take up space(float) on it's right.
+143. clear: left; - When we set this the element doesn't want any element to take up space(float) on it's left.
+144. clear: both; - When we set this the element doesn't want any element to take up space(float) on it's right or left.
+
+Flexbox Properties on container
+145. 'display:flex' - For using flex box on certain elements we must write in the parent container.
+146. By default the direction of flex for every element is left to right. ('flex-direction: row')
+147. 'flex-direction: column' - We can change flex direction from top to bottom.
+148. 'flex-direction: column-reverse' - We can change flex direction from bottom to top. 
+149. 'flex-direction: row-reverse' - We can change flex direction from right to left. 
+150. 'justify-content: center' - To align the items in the center horizontally.
+151. 'justify-content: flex-start' - To align the items on left horizontally.
+152. 'justify-content: flex-end' - To align the items on right horizontally.
+153. 'justify-content: space-around' - To have even space around each items(including 1st and last item) horizontally.
+154. 'justify-content: space-between' - To hae even space in between each item horizontally.
+154. 'align-items: center' - To align the items in the center vertically, when there is only one line of content.
+155. 'align-items: flex-start' - To align the items on left vertically.
+156. 'align-items: flex-end' - To align the items on right horizontally.
+157. 'align-items: space-around' - To have even space around each items(including 1st and last item) vertically.
+158. 'align-items: space-between' - To hae even space in between each item vertically.
+159. There are 2 axis in flex -
+     a. Main axis - Defined by the flex-direction.
+
+        For flex-direction: row or row reverse, main axis is (<----------------Main axis--------------->)
+
+        For flex-direction: coloumn or column reverse, main axis is    ↑
+                                                                       |
+                                                                       |
+                                                                       |
+                                                                       |
+                                                                       |
+                                                                       |
+                                                                   Main axis          
+                                                                       |
+                                                                       |
+                                                                       |
+                                                                       |
+                                                                       |
+                                                                       |
+                                                                       ↓ 
+        
+     b. Cross axis - Perpendicular to Main axis.
+
+        For flex-direction: row or row reverse, cross axis is   ↑
+                                                                |
+                                                                |
+                                                                |
+                                                                |
+                                                                |
+                                                                |
+                                                            Cross axis          
+                                                                |
+                                                                |
+                                                                |
+                                                                |
+                                                                |
+                                                                |
+                                                                ↓ 
+
+
+        For flex-direction: coloumn or column reverse, cross axis is <----------------Cross axis--------------->
+160. 'flex-wrap: wrap' - When elements from a container overflow then we do this so that the leaked elements will wrap below and will be visible properly.
+161. 'flex-wrap: wrap-reverse' - To wrap in reverse direction.
+162. 'align-content: center' - When there are multiple lines of content then we use this to center the whole content.
+163. There are no justify-items in flexbox.
+164. flex-flow: row                   wrap
+                row-reverse           nowrap
+                coloumn
+                coloumn-reverse
+165. 'gap: 5px' - Defines the gap between the items.
+166. 'gap: 5px 10px' - 5px for row gap and 10px for column gap.
+167. 'row-gap: 5px' - Defines the gap between two rows.
+168. 'column-gap' - Defines the gap between two columns.
+
+Flexbox properties on items
+169. Order - The more the Order of an item/element the more later the Order will appear
+170. Deafult order is 0.
+171. 'flex-grow: 2' - The element will take the space of 2 items.
+172. By default the value of flex-grow is 0.
+173. flex-shrink - The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+174. The align-self property overrides the grid or flexible container's align-items property.
+
+CSS grid
+175. Grid helps us in making certain layouts that actually resembles grids.
+176. 'display: grid' - For applying grid we must write this in the container.
+177. 'grid-template-rows: 120px 100px 190px' - This will create 3 rows in the grid each with size 120px, 100px and 190px.
+178. 'grid-template-columns: 120px 100px 190px' - This will create 3 cols in the grid each with size 120px, 100px and 190px.
+179. Grid line - The line between two rows or two cols in a grid is called a grid line.
+180. Grid cell - It is the area enclosed by 4 intersecting grid lines.
+181. Grid track - Space between 2 grid lines in a grid is known as grid track.
+182. Grid Area - Any area in a grid.
+183. Each grid line can be given a number and a name.
+184. Horizontal grid lines(row wise) are given numbers as 1 -5
+                                                          2 -4
+                                                          3 -3
+                                                          4 -2
+                                                          5 -1
+185. Vertical grid lines(column wise) are given numbers as  1  2  3  4  5
+                                                           -5 -4 -3 -2 -1
+186. 'grid-row: 1/2' - This means for a particular grid cell the grid row will start from grid line 1(numbered vertically) and end at grid line 2(numbered vertically).                                                                                                                
+187. 'grid-column: 1/3' - This means for a particular grid cell the grid column will start from grid line 1(numbered horizontally) and end at grid line 2(numbered horizontally).
+188. Overlapping grid cells:
+    .grid-cell-1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .grid-cell-2{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    The grid cell 1 and grid cell 2 will overlap because the start from the same grid row, grid column and end end at the same grid row, grid column.
+189. Instead of 'grid-row: 1/2' we can also write:
+     grid-row-start: 1;
+     grid-row-end: 2;
+190. Instead of 'grid-column: 1/2' we can also write:
+     grid-column-start: 1;
+     grid-column-end: 2;
+191. Giving names to grid lines (column wise):
+     grid-template-columns: [pehla] 120px [doosra] 100px [tisra];
+192. Giving names to grid lines (row wise):
+     grid-template-rows: [pehla] 120px [doosra] 100px [tisra];
+193. Overlapping grid cells using grid line names:
+    .grid-cell-1{
+        grid-row: pehla/doosra;
+        grid-column: pehla/doosra;
+    }
+    .grid-cell-2{
+        grid-row: pehla/doosra;
+        grid-column: pehla/doosra;
+    }
+
+    OR
+    .grid-cell-1{
+        grid-row: pehla/span 2;
+        grid-column: pehla/span 2;
+    }
+    .grid-cell-2{
+        grid-row: pehla/span 2;
+        grid-column: pehla/span 2;
+    }    
+194.fr units - These are specifically used in CSS Grids.
+195.'grid-template-columns: 1fr 1fr 1fr' - This means the grid will be divided into 3 fractions column wise.
+     If the width of the grid is 90px then each column will be 30px, 30px and 30px.
+196. 'grid-template-columns: 1fr repeat(4,2fr) 1fr' same as 'grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr'.
+197.'grid-template-rows: 1fr 1fr 1fr' - This means the grid will be divided into 3 fractions row wise.
+     If the height of the grid is 90px then each column will be 30px, 30px and 30px.
+198. 'gap: 5px' - Defines the gap between the grid cells.
+199. 'gap: 5px 10px' - 5px for row gap and 10px for column gap between the grid cells.
+200. 'row-gap: 5px' - Defines the gap between two rows.
+201. 'column-gap: 5px' - Defines the gap between two columns.
+202. Always use gap in flexbox and grid.
+203. We can use justify-self, justify-items, align-items, align-self in grid. The contents will be positioned accordingly inside their grid cells individually.
+204. We use justify-content and align-content whe the container is very big and the grid only takes less space within the container.
+205. 'place-content: center' this means both align-content and justify-content is center.
+
+206. IMPPPPPPPPPPPPP!!!
+      To center any item this is must:
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+CSS Transform
+207. This property is written inside the element on which we want to apply the transform property. Transform properties are mostly used in navbar. 
+208. transform: rotate(45deg) - It will turn the element by 45 degree.
+209. 360 degree = 1 turn
+     180 degree = 0.5 turn
+     90 degree =  0.25 turn
+210. transform: rotate(0.5turn) - It will turn the element by 180 degree.
+211. transform: rotateX(45deg) - To rotate the element by 45 degree around X-axis.
+212. transform: rotateY(45deg) - To rotate teh element by 45 degree around Y-axis.
+213. transform: rotateZ(45deg) - To rotate the element by 45 degree around Z-axis.
+214. transform: scale(1.6) - The element will be 1.6 times bigger than it's original size.
+215. transform: scaleX(1.6) - The element will be 1.6 times bigger than it's original size along the X axis. 
+216. transform: scaleY(1.6) - The element will be 1.6 times bigger than it's original size along the Y axis.
+217. transform: skew(45deg) - It will elongate the element along it's diagonal by 45 degree.
+     transform: skewX(45deg)
+     transform: skewY(45deg)
+218. transform: translate(45px) - It will move the element along X-axis by 45px.
+219. transform: translate(45%) - It will move the element along X-axis by 45% of the width.
+220. transform: translateY(45px) - It will move the element along Y-axis by 45px.
+221. transform: translateY(45%) - It will move the element along Y-axis by 45% of the height.
+222. By default the translate property applies along X-axis.
+223. transform: translate(45px) skew(45deg) rotateX(45deg) - Applying multiple transform properties:
+     transform properties.
+224. transform-origin: 0% 0% - This defines the coordinate of the element about which it will rotate.
+
+     Example:          X   Y
+     transform-origin: 0% 32%;
+     transform: rotateX(45deg);
+
+     In the above example the origin will shift to 32 on Y-axis (vertically). Now the element will roatate 45 degree clockwise at (0,32).
+
+CSS Transition
+225. Transition property is used in CSS for smooth change of state on the website.
+226. This property is written inside the element on which we want to apply the transition property.
+227. Transition happens when we use these 4 properties together:
+     a. transition-property: transform;
+     b. transition-duration: 3s; - The transition will take 3 seconds.
+     c. transition-timing-function: ease-in-out;
+     d. transition-delay: 1s; - The transition will applyafter 1 second.
+228. transition-property: all; - For applying multiple transition properties.
+229. transition-property: background-color, transform; - For applying only selected transition properties( here background-color and transform).
+230. transition: all 3s ease-in-out 1s; - Shorthand
+
+CSS Animations
+231. These are used when we want more complex transitions on the web page.
+232. Creating an animation:
+
+    .box
+    {
+        animation: name duration timing-function delay iteration-count direction fill-mode; /* Write this in the element which you want to animate */
+        animation: littleKiAnimation 3s; 
+    }
+
+    @keyframes littleKiAnimation {
+     from{
+        background-color: red;
+     }
+     to{
+        background-color: blueviolet;
+     }
+    }
+233. animation-name: littleKiAnimation; - To give the name of the animation.
+234. animation-duration: 3s; - For how much time the animation will occur.
+235. animation-iteration-count: 3; - The number of times the animation will repeat.
+236. animation-iteration-count: infinite; - For infinite number of times the animation will occur.
+237. animation-timing-function: ease-out; - Defines the timing of the animation.
+238. animation-delay: 3s; - After what time the animation will work.
+239. animation-direction: reverse; - It will reverse the path of animation.
+240. animation-direction: alternate; - The animation will take the original and the reverse path alternatively.
+241. animation-play-state: running; - In this state the animation will keep running.
+242. animation-play-state: paused; - In this state the animation will suddenly stop wherever and whichever state it is in.
+243. animation-fill-mode: backwards; -  This property defines the style of the element when the animation is either stopped or about to start. The value it takes is none(default state), forwards(value set by the last keyframe), backwards(value of the first keyframe) or both.
+244. Shorthand:
+     animation: name duration timing-function delay iteration-count direction fill-mode;
+     animation: littleKiAnimation 3s ease-out 1s infinite alternate;
+245. Multiple animations - 
+
+     animation: littleKiAnimation 3s ease-out 1s 1 alternate,
+                lit 3s ease-out 1s 1 alternate;
+                
+     @keyframes littleKiAnimation { / * 1stanimation */
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blueviolet;
+                /* transform: translateX(1000px); */
+            }
+        }
+        @keyframes lit { /* 2nd animation */
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            40%{
+                transform: rotate(300deg);
+            }
+            60%{
+                transform: rotate(400deg);
+            }
+            80%{
+                transform: rotate(500deg);
+            }
+            100%{
+                transform: rotate(600deg);
+            }
+            
+        }
+
+Object Fit and Position property
+246. At times when our image don't fit and fill our container we use object fit and position property. Like in the below case the size of the image is greater than the size of container.
+     <div class="container">
+      <img src="mango.jpg" alt="">
+     </div>
+247. By default value of the property of object-fit is fill.
+248. Even after giving the height and width to the image it will distort and will not maintain it's aspect ratio.
+249. img{
+          height: 384px;
+          width: 415px;
+          object-fit: cover;
+     }
+
+     This will  maintain the aspect ratio of the image and will fill into according to it's height(384px) and width(415px) (not the height and width of the container) but the image will be cropped.
+250. img{
+          height: 384px;
+          width: 415px;
+          object-fit: contain;
+        }
+    This will maintain the aspect ratio of the image and the full image will be printed but it will not take it's complete height(384px) and width(415px). Some space will be left.
+251. object-position: top left; - This specifies which positions of the image we don't want to be cropped.
+
+   img{
+          height: 384px;
+          width: 415px;
+          object-fit: cover;
+          object-position: top left;
+        }
+     Here the top and right side of the image will be kept.
+252. img{
+          height: 384px;
+          width: 415px;
+          object-fit: fill;
+          object-position: 10px 20px;
+        }
+
+    Here the image will move 10px from the left and 20px from the right. The image will be cropped accordingly.
+253. background-image: url("mango.jpg"); - To set background image to a container.
+254. background-position: center center; - To see the center of the image.
+255. background-position: top right; - To see the top right of the image.
+256. In case the background-image is smaller than the the container than the image repeats itself. 
+     If it is smaller in height than it will repeat in Y-axis.
+     If it is smaller in width than it will repeat along X-axis.
+257. background-repeat: no-repeat; - For not repeating the images.
+258. background-repeat: repeat-X; - For repeating the image along X-axis.
+259. background-repeat: repeat-Y; - For repeating the image along Y-axis.
+260. background-clip - 
+
+CSS Filters
+261. filter: blur(5px); - To add blur to the image. More is the blur value more blurred it will be.
+262. filter: brightness(120); - To increase or decrease the brightness of the image.
+263. filter: contrast(0.5); - To increase or decrese the contrast of an image.
+264. filter: grayscale(20%); - Increases or decreases the grayscale.
+     At filter: grayscale(100%); - The image will be black and white.
+265. filter: sepia(20%); - Add brownish tint to the image.
+266. filter: invert(1); - Inverts the color of the image.
+267. filter: opacity(1); - Increases or decreases the opacity of an image.
+     filter: opacity(0); - The image disappears.
+268. filter: blur(5px) brightness(1) contrast(0.5) grayscale(20%) sepia(20%) invert(1) opacity(1); - Adding multiple filters at a time.
+
+                                                        JavaScript
+JavaScript Introduction
+269. It is a client side scripting language for making the websites interactive.
+270. We can create a backend of an website by using nodeJS and JS.
+271. Javascript can be used in both frontend and backend.
+272. JavaScript frontend can be written by adding a <script></script> tag just before the closing body tag (</body>) in our .html file.
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>  
+        <script>
+            alert("hello world");
+        </script>
+    </body>
+    </html>
+273. JavaScript frontend can be written by creating a script.js file and linking it to the .html file by adding a <script src="script.js"></script> tag just before the closing body tag (</body>) in our .html file.
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>  
+        <script src="script.js"></script>
+        </body>
+        </html>
+274. console.log(" "); - It is used to print anything to the console of the chrome.
+     Example : console.log("Hello world")
+275. var a = prompt("Enter your number: ") - A prompt will appear to enter a number and the number entered will be assigned to 'a'. Let's suppose we entered 34. Then the value of 'a' will be 34.
+
+  Input:
+  var a = prompt("Enter a number");
+  console.log("The number is " + a)
+
+  34 is entered by the user.
+
+  Output:
+  The number is 34.
+276. To run a javascript file on terminal(backend) we must write 'node script.js' in the terminal.
+277. JavaScript backend can be written using mongoDB for running queries.
+278. We can also style the index.html page using javascript by targeting it's attributes in .js file:
+
+Examples:
+document.title = "Hey I am good"
+document.body.style.backgroundColor="red"
+
+JavaScript Variables
+279. Variables are container that stores value.
+280. To declare a variable in javascript we must declare it using 'var', 'let' or 'const' keyword.
+     Example: var a = 5;
+              var c = "Harry";
+281. 'var' is globally scoped and 'let' is block scoped.
+282. Always try to use the 'let' keyword for declaring variables.
+283. To find the datatype of a variable:
+     Input:
+     var a = 5;
+     var c = "Harry";
+     console.log(typeof(a), typeof(c));
+
+     Output:
+     number string
+284. Rules for choosing JS variable names:
+     a. Letters, digits, underscore and $ sign is allowed.
+     b. Variable name must begin with a letter, $ or _ .
+     c. JS reserved words can't be used as a variable name.
+     d. JS is case sensitive that means harry and Harry are two different variables. 
+285. Things not allowed in JS:
+     a. var 55a = "Rohan"
+     b. const a = 5;
+        a = a + 5;
+286. Difference between 'let', 'var' and 'const' keyword:
+
+     'let' has block scope
+     'var' has global scope
+287. There are 2 types of datatypes in JS:
+     a. Primitive datatype - Basic datatypes.
+     b. Object - They are user defined datatypes.
+288. Primitive datatypes are:
+     1. Null
+     2. Number
+     3. string
+     4. symbols
+     5. undefined
+     6. boolean
+     7. bigInt
+290. Eventhough 'Null' is a primitive data type if we write typeof(null) then it will show 'object. This is because this is a long-standing bug in JS, but one that is likely never going to be fixed. Too much code on the Web relies on the bug and thus fixing it would cause a lot more bugs!
+291. Creating Object data type:
+
+    let o ={
+    "name" : "Little",   /* key:value */
+    "job role" : "doctor"
+    }
+
+     console.log(o)
+
+292. Adding a new key value pair to existing object:
+     o.salary = "100cr"
+293. Operators in JavaScript are:
+    a. Arithmetic Operators : 
+       +    Addition
+       -    Subtraction
+       *    Multiplication
+       /    Division
+       **   Exponential
+       %    Modulus
+       ++   Increment
+       --   Decrement
+    b. Assignment Operators:
+       =    x=y
+       +=   x=x+y
+       -=   x=x-y
+       /=   x=x/y
+       %=   x=x%y
+       **=  x=x**y
+    c. Comparison Operators
+       ==   Equal to
+       !=   Not equal to
+       ===  Equal to and if type is same
+       !==  Not equal to and type is not same
+       >    Greater than
+       <    Less than
+       >=   Greater than and equal to
+       <=   Less than and equal to
+       ?    Ternary operator
+    d. Logical Operators
+       &&   Logical AND
+       ||   Logical OR
+       !    Logical NOT
+294. Conditional statements:
+     a. if statement
+
+        let age = 5;
+
+        if(age>18){
+            console.log("You can drive");
+        }
+     b. if-else statements
+
+        let age = 5;
+
+        if(age>18){
+            console.log("You can drive");
+        }
+        else{
+            console.log("You can't drive");
+        }
+     c. if-else if-else statements
+
+        let age = 5;
+
+        if(age>18){
+            console.log("You can drive");
+        }
+        else if(age<5){
+            console.log("You are a baby");
+        }
+        else{
+            console.log("You can't drive");  
+        }
+     d. Ternary operator
+        a = 6
+        b = 8
+        c = a>b ? (a-b):(a+b)                        is SAME AS                            if(a>b){
+                                                                                             c=a-b;
+                                                                                           }
+                                                                                           else{
+                                                                                            c=a+b;
+                                                                                           }
+295. Loops                                                            
+     a. for Loop                                                      OUTPUT       
+        let a=1;                                                      1
+                                                                      2
+        for (let i = 0; i < 10; i++) {                                3
+            console.log(a+i);                                         4
+        }                                                             5
+                                                                      6
+                                                                      7
+                                                                      8
+                                                                      9
+                                                                      10
+
+     b. for in Loop                                                   OUTPUT
+        let obj = {                                                   name Little
+            name: "Little",                                           role SDE
+            role: "SDE",                                              company LBB
+            company: "LBB"
+        }
+
+        for (const key in obj) { 
+            const element = obj[key];
+            console.log(key, element);
+        }
+     c. for of Loop
+        for (const c of "Little") {                                   OUTPUT
+          console.log(c);                                             L
+        }                                                             i
+                                                                      t
+                                                                      t
+                                                                      l
+                                                                      e
+     d. while Loop
+        let i=1;                                                      OUTPUT
+        while(i<6)                                                    1
+        {                                                             2
+           console.log(i);                                            3
+           i++;                                                       4
+        }                                                             5
+     e. do while Loop                                                 
+        let i=0;                                                      OUTPUT
+        do {                                                          0
+           console.log(i);                                            1
+           i++;                                                       2
+        } while (i<6);                                                3
+                                                                      4
+                                                                      5
+
+JavaScript Functions
+296. When we have to repeat the same block of code again and again we use JavaScript functions.
+297. Snippet
+     function name(parameters) {
+    
+     }
+   
+     Example-1:
+     function helloname(name) {                                      OUTPUT
+       console.log("Hey " + name + " girl.");                        Hey Harry girl.
+     }                                                               Hey Little girl.
+
+     helloname("Harry");
+     helloname("Little");
+
+     Example-2:
+     function sum(a,b) {                                             OUTPUT
+        console.log(a+b);                                            7
+     }
+
+     sum(3,4);
+
+298. Using return keyword
+
+     Example - 1:
+     function sum(a,b) {
+     return a+b; 
+     }
+
+     let result = sum(3,4);
+     console.log("The result is : " + result);
+299. Arguments with default values in a function:
+    
+    Example-1:                                                           OUTPUT
+    function sum(a,b, c=5) {  // 'c' is a default argument               12
+    return a+b+c;
+    }
+
+    let result = sum(3,4);
+    console.log("The result is : " + result);
+
+    Example-2:                                                           OUTPUT
+    function sum(a,b, c=5) {  // 'c' is a default argument               8
+    return a+b+c;
+    }
+
+    let result = sum(3,4,1);
+    console.log("The result is : " + result);
+230. Arrow Function - A function that can be declared both as function and a variable is known as arrow function.
+231. Snippet
+     const functionName = () =>{
+
+     }
+
+     Example:
+     const func1 = (a)=>{                                               OUTPUT
+       console.log("The arrow function " + a);                          The arrow function 23
+     }
+
+     func1(23);
+
+JavaScript Strings
+232. String is immutable.
+233. let a = "Little";
+     console.log(a[0]);  // OUTPUT : L
+234. To find the length of a string:
+     console.log(a.length); // OUTPUT: 6
+235. Template literals
+     let real_name = "Harry";
+     let age = 23;
+     console.log(`Hello I am ${real_name}. I am ${age} years old.`);
+236. To convert a string into uppercase:
+     let a = "Little";
+     console.log(a.toUpperCase());
+237. To convert a string into lowercase:
+     let a = "Little";
+     console.log(a.toLowererCase());
+238. Slice function:
+     a. let a = "Little";
+        console.log(a.slice(1, 4)); // OUTPUT: itt - This will print the characters from index 1 to 3 (excluding index 4).
+     b. let a = "Little";
+        console.log(a.slice(1)); // OUTPUT: ittle - This will print the characters starting from index 1 to 5.
+239. Replace function:
+     a. let a = "Little";
+        console.log(a.replace("it", 'xy')); // OUTPUT: Lxytle
+     b. In case there are two occurances than it will always change at the first occurance:
+        let a = "Lititle";
+        console.log(a.replace("it", 'xy')); // OUTPUT: Lxyitle
+240. Concatenating two strings: 
+     let a = "Little";
+     let b = "Beauty";
+     console.log(a.concat(b)); // OUTPUT: LittleBeauty
+     console.log(a.concat("Bisoyi")); //OUTPUT: LittleBisoyi
+     console.log(b.concat(a, "Bisoyi")); //OUTPUT: BeautyLittlebisoyi
+
+JavaScript Arrays
+241. Array is mutable.
+     let arr = [1, 2, 4, 5, 7];
+     console.log(arr);          // OUTPUT is [1, 2, 4, 5, 7]
+     arr[0] = 345;
+     console.log(arr);          // OUTPUT is [345, 2, 4, 5, 7]
+242. In JavaScript an array is a collection of multiple data types.
+243. Creating an array
+     let arr = [1, 2, 4, 5, 7];
+     console.log(arr);
+244. Finding the length of an array:
+     console.log(arr.length);
+245. Index of an array:
+     let arr = [1, 2, 4, 5, 7];
+     Index      0  1  2  3  4
+246. Type of an array is an object.
+     console.log(typeof arr);   // OUTPUT is object
+247. Converting an array to string:
+     console.log(arr.toString()); // OUTPUT is 1, 2, 4, 5, 7
+248. Joining an array:
+     console.log(arr.join(" and ")); // OUTPUT 1 and 2 and 4 and 5 and 7
+249. To pop out the last element:
+     arr.pop();
+     console.log(arr); // OUTPUT is [1, 2, 4, 5]
+250. To remove the front element of an array:
+     arr.shift();
+     console.log(arr); // OUTPUT is [ 2, 4, 5, 7]
+251. To push element at the end of an array:
+     arr.push("Harry");
+     console.log(arr); // OUTPUT is [1, 2, 4, 5, 7, "Harry"]
+252. To push element at the front of the array:
+     arr.unshift("Jack");
+     console.log(arr);  // OUTPUT is [ 'Jack', 1, 2, 4, 5, 7 ]
+253. Pop is same as Shift
+     Push is same as Unshift
+254. To delete an array element without changing it's length.The memory is still allocated but no element is placed.
+     let arr = [1, 2, 4, 5, 7];
+     console.log(arr);          // OUTPUT is [1, 2, 4, 5, 7]
+     console.log(arr.length);   // OUTPUT is 5
+     delete arr[2];
+     console.log(arr);          // OUTPUT is [ 1, 2, <1 empty item>, 5, 7 ]
+     console.log(arr.length);   // OUTPUT is 5 even after deleting one element.
+255. Concatenating the arrays:
+     let arr1 = [1, 2, 4, 5, 7];
+     let arr2 = [9,8,10,11];
+     let arr3 = [11, 22, 33, 44, 55];
+
+     console.log(arr1.concat(arr2, arr3)); // OUTPUT is [ 1,  2,  4,  5,  7,  9, 8, 10, 11, 11, 22, 33, 44, 55 ]
+     It returns a new array but doesn’t change the existing arrays.
+256. To sort an array:
+     let arr = [ 90, 34, 15, 78, -1, 5]
+     console.log(arr);  // OUTPUT is [ 90, 34, 15, 78, -1, 5]
+     arr.sort();
+     console.log(arr);  // OUTPUT is [ -1, 15, 34, 5, 78, 90 ]
+257. Splice function:
+     a. let arr = [ 90, 34, 15, 78, -1, 5]
+        console.log(arr); // OUTPUT is [ 90, 34, 15, 78, -1, 5 ]
+        arr.splice(1,3);  // It will remove 3 elements starting from index 1 including the element at index 1.
+        console.log(arr); // OUTPUT is [ 90, -1, 5 ]
+     b. arr.splice(1,3, 222, 333);  // It will remove 3 elements starting from index 1 including the element at index 1. Then it will add 222 and 333 starting from index 1.
+        console.log(arr); // OUTPUT is [ 90, 222, 333, -1, 5 ]
+258. Slice function
+     let arr = [ 90, 34, 15, 78, -1, 5]
+     console.log(arr);  // OUTPUT is [ 90, 34, 15, 78, -1, 5]
+     console.log(arr.slice(1,4)); // OUTPUT is [34, 15, 78] . It will slice the array and print only the elements from index 1 to index 3 while excluding index 4.
+259. To reverse an array:
+     let arr = [ 90, 34, 15, 78, -1, 5]
+     console.log(arr);  // OUTPUT is [ 90, 34, 15, 78, -1, 5]
+     arr.reverse();
+     console.log(arr); // OUTPUT is [ 5, -1, 78, 15, 34, 90 ]
+
+Loops in array
+260. For loop:
+     let arr = [1, 93, 5, 6, 88]                                                OUTPUT
+     for (let index = 0; index <arr.length; index++) {                          1
+         console.log(arr[index]);                                               93
+     }                                                                          5
+                                                                                6
+                                                                                88
+261. For each loop:                                                             OUTPUT
+     let arr = [1, 93, 5, 6, 88]                                                1  0 [ 1, 93, 5, 6, 88 ]
+     arr.forEach((value, index, arr) => {                                       93 1 [ 1, 93, 5, 6, 88 ]
+     console.log(value, index, arr);                                            5  2 [ 1, 93, 5, 6, 88 ]
+     });                                                                        6  3 [ 1, 93, 5, 6, 88 ]    
+                                                                                88 4 [ 1, 93, 5, 6, 88 ]
+262.  For in Loop (Always used in context of an object):                        OUTPUT
+      let obj = {     // So we display the array as an object.                  a 1
+        a: 1,                                                                   b 2
+        b: 2,                                                                   c 3
+        c: 3
+      }
+
+      for (const key in obj) {
+          if (Object.hasOwnProperty.call(obj, key)) {     // In JS, built-in objects have their own added properties. To get only the relevent properties we have this 'If' statement.
+              const element = obj[key];
+              console.log(key, element)
+          }
+      } 
+263. For of Loop:                                                              OUTPUT
+     for (const iterator of arr) {                                             1
+         console.log(iterator);                                                93
+     }                                                                         5
+                                                                               6
+                                                                               88
+264. When we want to create a new array from an existing array we use the map function.
+     a. Method - 1 (By using For Loop)
+        let arr = [1, 93, 5, 6, 88];
+        let newArr = [];
+        console.log(arr);              // OUTPUT : [ 1, 93, 5, 6, 88 ]
+        for (let index = 0; index < arr.length; index++) {
+            const element = arr[index];
+            newArr.push(element);
+        }
+        console.log(newArr);           // OUTPUT : [ 1, 93, 5, 6, 88 ]
+     b. Method - 2 (By using Map function)
+        let arr = [1, 93, 5, 6, 88];
+        console.log(arr);              // OUTPUT : [ 1, 93, 5, 6, 88 ]
+        let newArr = arr.map((e)=>{
+            return e;
+        });
+        console.log(newArr);          // OUTPUT : [ 1, 93, 5, 6, 88 ]
+265. Filter Method
+     let arr = [1, 93, 5, 6, 88];
+     let newArr = [];
+     console.log(arr);
+     for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        newArr.push(element);
+     }
+     console.log(newArr);
+     const greaterThanSeven = (e)=>{
+           if(e>7){
+             return true;
+           }
+           return false;
+     }
+     console.log(arr.filter(greaterThanSeven));   // OUTPUT : [ 93, 88 ]
+266. Reduce Method
+     let arr = [1, 2, 3, 4, 5];
+
+     const multiply = (a,b)=>{
+         return a*b;
+     }
+
+     console.log(arr.reduce(multiply));   // OUTPUT : 120
+
+     The reduce method applies the multiply function on consecutive array elements and returns a single value.
+267. Array.from - To create an array from any object.
+     console.log(Array.from("Harry"));   // OUTPUT : [ 'H', 'a', 'r', 'r', 'y' ]
+
+                                                        DOM (Document Object Model)
+268. DOM(Document Object Model) is created to map an HTML page as an object/document.
+269. How to write the DOM?
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Javascript DOM</title>
+     </head>
+     <body>
+         <script>  // Writing DOM below
+             document.title = "Code with Little";
+             console.log(document.title);
+             console.log(document.body);
+             document.body.style.backgroundColor = "green";  // this adds an inline CSS to the document body.
+         </script>
+     </body>
+     </html>
+270. BOM - Browser Object Model 
+271. Window is a global object.
+272. Window includes  DOM + BOM + JavaScript Core
+273. HTML elements can be targeted by Javascript using BOM and DOM.
+
+Children, Parent, Sibling nodes
+                                                                Reference
+                                                 <!DOCTYPE html>
+                                                 <html lang="en">
+                                                 <head></head>
+                                                 <body>
+                                                     <div class="container">
+                                                         <div class="box">Box1</div>
+                                                         <div class="box">Box2</div>
+                                                         <div class="box">Box3</div>
+                                                         <div class="box">Box4</div>
+                                                         <div class="box">Box5</div>
+                                                     </div>
+                                                     <script src="script.js"></script>
+                                                 </body>
+                                                 </html>
+274. The whole HTML page is a document.
+275. HTML Element, comments, text all are included in child nodes. But only HTML elements are included in element nodes.
+276. .childNodes - By this we can find the child nodes of any HTML element.
+     For example if we want to find the child node of the body element in the above code, then we type the below command in the console:
+     document.body.childNodes
+
+     OUTPUT: NodeList(9) [text, div.container, text, script, text]
+
+     1. text - The white space between <body> and <div class="container">.
+     2. div.container - It corresponds to  corresponds to the <div class="container"> element.
+     3. text - The whitespace between the closing </div> tag and the opening <script> tag.
+     4. script - It corresponds to the <script src="script.js">.
+     5. text - The whitespace between the closing </script> tag and the closing </body> tag.
+
+277. document.body.childNodes - We can find the child nodes of the body element.
+278. document.body.childNodes[1] - To find the child node of body element at index 1.
+280. document.body.children - To get only the HTML element child.
+281. document.body.firstElementChild - To get the first HTML element child.
+     OUTPUT: <div class="container"></div>
+282. document.body.lastElementChild - To get the last HTML element child.
+     OUTPUT: <script src="script.js"></script>
+283. document.body.firstElementChild.style.propertyName = value - - To apply style to any HTML element.
+     Example:
+     document.body.firstElementChild.style.backgroundColor = "green" 
+     |______________________________|
+                    |
+        <div class="container"> 
+     In the abpove example the background color of 'document.body.firstElementChild' i.e, <div class="container"></div> changes to green.
+284. element.parentNode - To find the parent node of any HTML element.
+     Example:
+     document.body.firstElementChild.parentNode
+     |_____________________________|
+                    |
+        <div class="container">         
+     OUTPUT: <body></body>
+     In the above example the parent node of 'document.body.firstElementChild' is <body></body>
+285. Sibling element - The HTML elements which have the same parent are known as siblings.
+286. element.nextElementSibling - To find the next HTML element sibling.
+     Example:
+     document.body.firstElementChild.children[3].nextElementSibling
+     |_________________________________________|
+                        |
+             <div class="box">Box4</div>           
+     OUTPUT: <div class="box">Box5</div>
+287. element.previousElementSibling - To find the previous HTML element sibling.
+     Example:
+     document.body.firstElementChild.children[3].previousElementSibling
+     |_________________________________________|
+                        |
+             <div class="box">Box4</div>           
+     OUTPUT: <div class="box">Box3</div>
+288. element.nextSibling - To find the next node element sibling.
+     Example:
+     document.body.firstElementChild.children[3].nextSibling
+     |_________________________________________|
+                        |
+             <div class="box">Box4</div>           
+     OUTPUT: #text
+289. element.previousSibling - To find the next node element sibling.
+     Example:
+     document.body.firstElementChild.children[3].previousSiblingSibling
+     |_________________________________________|
+                        |
+             <div class="box">Box4</div>           
+     OUTPUT: #text
+290. element.rows - To display the rows of a table.
+     Example:
+     document.body.children[1].rows
+     |_______________________|
+                 |
+           <table></table>
+     OUTPUT: HTMLCollection(2) [tr, tr]
+
+Selecting by Classes, Ids and more
+                                                        Reference
+                                     <body>
+                                         <div class="container">
+                                        [0]  <div class="box">Little Beauty 1</div>
+                                        [1]  <div class="box">Little Beauty 2</div>
+                                        [2]  <div id="redbox" class="box">Little Beauty 2.5</div>
+                                        [3]  <div class="box">Little Beauty 3</div>
+                                        [4]  <div class="box">Little Beauty 4</div>
+                                        [5]  <div class="box">Little Beauty 5</div>
+                                         </div>
+                                         <script src="script.js"></script>
+                                     </body>  
+291. document.body.getElementsByClassName("box") will return a HTML collection, so we have to use forEach loop to target each of the div container with class box.                                     
+292. xyz.getElementsByClassName("className") - To target any element/elements by it's/their class name.
+     Example:
+     let boxes = document.body.getElementsByClassName("box")[2];
+                 |____________________________________________|
+                                       |
+                    <div class="box">Little Beauty</div>
+     boxes.style.backgroundColor = "red";
+293. xyz.getElementsById - To target any element by it's id name.
+     Example:
+     document.getElementById("redbox").style.backgroundColor = "red"
+     |_______________________________|
+                     |
+      <div id="redbox" class="box">Little Beauty 2.5</div>    
+294. document.querySelector(".box").style.backgroundColor = "red" - It selects the 1st box and makes it's background color red.
+     |_____________________________|
+                     |
+      <div class="box">Little Beauty</div>
+295. document.querySelectorAll(".box") - This returns a node list so we can't apply style to it.
+296. WARNING!!!
+     document.querySelectorAll(".box").style.backgroundColor="green"
+     Writing the above code will throw an error. As 'document.querySelectorAll(".box")' will return a node list. So we can't apply style to node list.
+297. To target and change the background color of each of the boxes we have to use forEach loop.
+     document.querySelectorAll(".box").forEach((e) =>{
+        e.style.backgroundColor = "red";
+     });
+298. document.getElementsByTagName("div") - This will return a HTML collection.
+     So we have to convert it into an array by using 'Array.from'. Than only we can access each of the div elements.
+299. To target and change the background color of each of the div element:    
+     Array.from(document.getElementsByTagName("div")).forEach(e => {
+          e.style.backgroundColor="green";
+     });
+300. element.matches(CSS selector) Method - It checks if the element will be selected by the specific CSS selector or not.
+     Example-1:
+     document.getElementsByTagName("div")[3].matches("#redbox")
+     |__________________________________|
+            0         | 1        2           3            4        5        6                 7                  
+     [div.container, div.box, div.box, div#redbox.box, div.box, div.box, div.box, redbox: div#redbox.box]                 
+
+
+     document.getElementsByTagName("div")[3].matches("#redbox")
+     |_____________________________________|
+                       |
+     <div id="redbox" class="box">Little Beauty 2.5</div>              
+     OUTPUT: true
+
+     Example-2:
+     document.getElementsByTagName("div")[2].matches("#redbox")
+     |_____________________________________|
+                       |
+     <div class="box">Little Beauty</div>
+     OUTPUT: false
+301. element.closest(CSS selector) Methods - It will find the nearest element where we can apply the given CSS selector.
+     Example-1:
+     document.getElementsByTagName("div")[2].closest(".box")
+     OUTPUT:
+     <div class="box" style="background-color: green;">Little Beauty 2</div>
+     Example-2:
+     document.getElementsByTagName("div")[2].closest("#redbox")
+     OUTPUT:
+     null
+     Example-3:
+     document.getElementsByTagName("div")[2].closest(".container")
+     OUTPUT:
+     <div class="container" style="background-color: green;">...</div>
+     Example-4:
+     <html lang="en">
+      <head>...</head>
+      <body>...</body>
+     </html>
+302. element1.contains(element2) - It returns true if element2 is present inside element1.
+     element1.contains(element2) - It returns false in this case.
+     element.contains(element)  - It returns true in this case as an element can contain itself.
+
+Inserting and Removing elements from HTML Document
+                                                            Referance
+                                   <!DOCTYPE html>
+                                   <html lang="en">
+                                   <head>
+                                   <meta charset="UTF-8">
+                                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                   <title>Document</title>
+                                   </head>
+                                   <body>
+                                   <div class="container">
+                                        <div class="box blue bg-blue" style="color: blue;" data-createdby="Little" data-conceptby="Neha">Hey I am a box</div>
+                                        <div class="box">Hey I am a box</div>
+                                   </div>
+                                   </body>
+                                   </html>
+303. xyz.innerHTML - This will select the HTML element that is inside the particular HTML element (xyz here). 
+     innerHTML = inside HTML element
+     Examle-1:
+     document.querySelector(".box").innerHTML - This will select the HTML element that is inside the 'box' container.
+     OUTPUT: 'Hey I am a box'
+     Example-2:
+     document.body.querySelector(".container").innerHTML
+     OUTPUT: '\n        <div class="box">Hey I am a box</div>\n    '
+304. xyz.innerText - This will select all the texts that are inside xyz element. 
+     Example-1:
+     document.body.querySelector(".container").innerText - This will select any text that is inside 'container'.
+     OUTPUT: 'Hey I am a box'
+     Example-2:
+     document.body.querySelector(".box").innerText - This will select any text that is inside 'box'.
+     OUTPUT: 'Hey I am a box'
+306. xyz.outerHTML - This will select the HTML element that is inside the particular HTML element (xyz here) and the HTML element(xyz here). 
+     outerHTML = inside HTML + HTML element itself
+     Example-1:
+     document.body.querySelector(".container").outerHTML
+     OUTPUT: '<div class="container">\n        <div class="box">Hey I am a box</div>\n    </div>'
+     Example-2:
+     document.body.querySelector(".box").outerHTML
+     OUTPUT: '<div class="box">Hey I am a box</div>'
+307. xyz.tagName - This will tell the type of HTML element 'xyz' is.
+                   It is for HTML elements only.
+     Example-1:
+     document.body.querySelector(".box").tagName
+     OUTPUT: 'DIV' // It is because xyz is a 'div' element. 
+308. xyz.nodeName - It is for HTML elements, comments etc.
+     Example:
+     document.body.querySelector(".box").tagName
+     OUTPUT: 'DIV'
+309. xyz.innerHTML = "new text" - To change the existing HTML text content of the first div whose class is "box".
+     Example:
+     document.querySelector(".box").innerHTML = "I am Little" 
+     Earlier it was "Hey I am a box" and now it is "I am Little".
+310. xyz.hidden - It checks if the HTML element (xyz here) is hidden or not. It returns either true or false.
+310. xyz.hidden = true - It hides the HTML element(xyz here).
+     Example:
+     document.querySelector(".box").hidden = true 
+     It hides the HTML element <div class="box">Hey I am a box</div>.
+311. xyz.hasAttrubute("attributeName") - It checks if the HTML element(xyz here) has a particular attribute or not.
+     Example:
+     document.querySelector(".box").hasAttribute("style") // OUTPUT: true
+     The OUTPUT of the above line of code is "true" as the first div with class box has style attribute.
+312. xyz.getAttribute("attributeName") - It tells more about the attribute(xyz here).
+     Example:
+     document.querySelector(".box").getAttribute("style") //OUTPUT: 'color: blue;'
+313. xyz.setAttribute("style", "color: red") - It set the color of the HTML element to red.
+     Example:
+     document.querySelector(".box").setAttribute("style", "color:red")
+     It set the color of the HTML element(<div class="box" style="color: blue;">Hey I am a box</div>) from blue to red.
+314. xyz.removeAttribute("attributeName") - To remove a particular attribute.
+     Example:
+     document.querySelector(".box").removeAttribute("style")
+     The style attribute gets removed from the HTML element (<div class="box" style="color: blue;">Hey I am a box</div>).
+315. document.designMode='on' - By writing this the design Mode of an HTML page is ON and we can make any changes by pressing backspace.
+316. Custom Attribute - Let's suppose we want to store some info about a particular attribute like created by or concept by than we add it as follow:
+     <div class="box" data-createdby="Little" data-conceptby="Neha">Hey I am a box</div>
+     data-createdby="Little" and data-conceptby="Neha" are custom attributes.
+317. xyz.dataset - To display the custom attribute.
+     Example:
+     document.querySelector(".box").dataset
+     OUTPUT: DOMStringMap {createdby: 'Little', conceptby: 'Neha'}
+318. createElement - To dynamically create and insert an HTML element using JavaScript.
+     Append:
+     <script>
+        let div = document.createElement("div"); // A div is created
+        div.innerHTML = "I have been created and inserted <b>Little</b>." // The HTML content inside <div> is "I have been created and inserted <b>Little</b>.".
+        div.setAttribute("class", "created"); // A class name created is added to the div element.
+        document.querySelector(".container").append(div); // When we append it always gets added at the end of the container( Inside container div.).
+     </script>
+
+     Prepend:
+     <script>
+        let div = document.createElement("div"); // A div is created
+        div.innerHTML = "I have been created and inserted <b>Little</b>." // The HTML content inside <div> is "I have been created and inserted <b>Little</b>.".
+        div.setAttribute("class", "created"); // A class name created is added to the div element.
+        document.querySelector(".container").prepend(div); // When we append it always gets added at the start of the container( Inside container div.).
+     </script>     
+
+     After:
+     <script>
+        let div = document.createElement("div"); // A div is created
+        div.innerHTML = "I have been created and inserted <b>Little</b>." // The HTML content inside <div> is "I have been created and inserted <b>Little</b>.".
+        div.setAttribute("class", "created"); // A class name created is added to the div element.
+        document.querySelector(".container").after(div); // It always gets added after the container( Outside container div.).
+     </script>
+
+     Before:
+     <script>
+        let div = document.createElement("div"); // A div is created
+        div.innerHTML = "I have been created and inserted <b>Little</b>." // The HTML content inside <div> is "I have been created and inserted <b>Little</b>.".
+        div.setAttribute("class", "created"); // A class name created is added to the div element.
+        document.querySelector(".container").before(div); // It always gets added before the container( Outside container div.).
+     </script>
+319. insertAdjacentHTML - It is a method used to insert HTML markup into a specified position relative to the current element.
+
+     afterbegin:
+     let cont = document.querySelector(".container");
+     cont.insertAdjacentHTML("afterbegin","<b>I am under the water</b>");
+     Explanation: It adds the <b></b> tag just after the div with class container begins.
+     <div class="container">
+-------><b>I am under the water</b>        
+        <div class="box" style="color: blue;" data-createdby="Little" data-conceptby="Neha">Hey I am a box</div>
+        <div class="box ">Hey I am a box</div>
+     </div>
+
+     afterend:
+     let cont = document.querySelector(".container");
+     cont.insertAdjacentHTML("afterend","<b>I am under the water</b>");
+     Explanation: It adds the <b></b> tag just after the div with class container end.
+     <div class="container">       
+        <div class="box" style="color: blue;" data-createdby="Little" data-conceptby="Neha">Hey I am a box</div>
+        <div class="box ">Hey I am a box</div>
+     </div>
+----><b>I am under the water</b> 
+
+     beforebegin:
+     let cont = document.querySelector(".container");
+     cont.insertAdjacentHTML("beforebegin","<b>I am under the water</b>");
+     Explanation: It adds the <b></b> tag just before the div with class container begin.
+----><b>I am under the water</b>
+     <div class="container">       
+        <div class="box" style="color: blue;" data-createdby="Little" data-conceptby="Neha">Hey I am a box</div>
+        <div class="box ">Hey I am a box</div>
+     </div>
+
+     beforeend:
+     let cont = document.querySelector(".container");
+     cont.insertAdjacentHTML("beforeend","<b>I am under the water</b>");
+     Explanation: It adds the <b></b> tag just before the div with class container end.
+     <div class="container">       
+        <div class="box" style="color: blue;" data-createdby="Little" data-conceptby="Neha">Hey I am a box</div>
+        <div class="box ">Hey I am a box</div>
+-------><b>I am under the water</b>
+     </div>
+
+320. insertAdjacentText - To insert a text.
+321. insertAdjacentElement - To insert an element.
+323. xyz.remove() - To remove an element.
+     Example:
+     document.querySelector('.box').remove() - This removes the first div with class box.
+324. classList 
+     Example:
+     document.querySelector('.box').classList
+     OUTPUT: DOMTokenList(3) ['box', 'blue', 'bg-blue', value: 'box blue bg-blue']
+325. className
+     Example:
+     document.querySelector('.box').className
+     OUTPUT: 'box blue bg-blue'
+326. xyz.classList.add('new class name') - To add a class to the classList.
+     Example:
+     document.querySelector('.box').classList.add('little')
+327. xyz.classList.remove('class name') - To remove a class to the classList.
+     Example:
+     document.querySelector('.box').classList.remove('little')
+328. xyz.classList.toggle('red') - If the class is applied than toggle will turn OFF the class(the class will not be applied).
+                                   If the class is not applied than toggle will turn ON the class(the class will be applied).
+     Example:
+     document.querySelector('.box').classList.toggle('red') - If the class red is applied (the text inside div with box class is red) than toggle will turn OFF the class (the color of the text inside div with box class will be black after toggle).
+                                                              If the class red is not applied (the text inside div with box class is black) than toggle will turn ON the class(the color red will be applied on the text inside the div with class box after toggle).
+
+JavaScript Events
+329. Browser events are a signal that something may have happen.
+330. There are many built in events.
+                                                         Reference
+                                         <!DOCTYPE html>
+                                         <html lang="en">
+                                         <head>
+                                             <meta charset="UTF-8">
+                                             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                             <title>Document</title>
+                                         </head>
+                                         <body>
+                                             <div class="container">
+                                                 <div class="box">Hey I am a box</div>
+                                             </div>
+                                             <button id="btn">Change content</button>
+                                             <script src="script.js"></script>
+                                         </body>
+                                         </html>
+331. xyz.addEventListener("eventType", function) - 'addEventListener' method will take two arguments 1st the type of event and 2nd the function that will execute after the event is performed on xyz.
+332. Adding an event listener:
+     If we have to change the content inside the button from "Change content" to "Hello I am under the water" than we can do it as follows by adding an event listener:
+
+     let button = document.getElementById("btn")                                 // We can target and fetch the button through it's id="btn" and store it in the button .
+     button.addEventListener("click", ()=>{                                     // Than we add a method called "addEventListener("eventType", function)". The function will happen only after we click the button.
+        document.getElementById("btn").innerText="Hello I am under the water"; // After clicking the button the content of the button will change from "Hey I am a box" to "Hello I am under the water".
+     })
+
+Event Bubbling
+                                                       Reference
+                           <body>
+                               <div class="container">
+                                   <section class="childContainer">
+                                     <div class="child">
+                                       I am a child
+                                     </div>
+                                   </section>
+                               </div>
+                               <script>
+                                   document.querySelector(".child").addEventListener("click", ()=>{
+                                       alert("Child is clicked");
+                                   })
+                                   document.querySelector(".childContainer").addEventListener("click", ()=>{
+                                       alert("Child container is clicked");
+                                   })
+                                   document.querySelector(".container").addEventListener("click", ()=>{
+                                       alert("container is clicked");
+                                   })
+                               </script>
+                           </body>
+333. Bubbling of events - When we click on the child element than along with it's own event, it's parent element's event all it's ancestor element's event gets trigerred.
+334. Example:
+     The class '.child' is inside the class '.childContainer' and the class '.childContainer' is inside the class '.container'.
+     .container
+          \/
+       .childContainer
+          \/
+       .child
+
+     We have added an event to the '.child' class.
+
+     document.querySelector(".child").addEventListener("click", ()=>{
+                                       alert("Child is clicked");
+     })
+
+     We have added an event to the '.childContainer' class.
+
+     document.querySelector(".childContainer").addEventListener("click", ()=>{
+                                       alert("Child container is clicked");
+     })    
+
+     We have added an event to the '.container' class.
+
+     document.querySelector(".container").addEventListener("click", ()=>{
+                                       alert("container is clicked");
+     })
+
+     After clicking on class '.child':
+     When we will click on '.child' class an alert 'child is clicked', another alert 'Child container is clicked' and atlast another alert 'container is clicked' pops up.
+     This is called bubbling of events.
+
+     After clicking on class 'childContainer':
+     When we will click on '.childContainer' class an alert 'Child container is clicked' and another alert 'container is clicked' pops up.
+     This is called bubbling of events.
+
+     After clicking on class 'container':
+     When we will click on '.container' class an alert 'container is clicked' pops up.
+     This is called bubbling of events.
+335. Stopping event propagation:
+     document.querySelector(".child").addEventListener("click", (e)=>{
+          e.stopPropagation();
+          alert("Child is clicked");
+     })
+     For stopping an event propragation we add an event object 'e' as an argument to the arrow function. This object allows you to access properties and methods related to the click event, such as e.stopPropagation() to stop the event from bubbling up the DOM tree.
+336. To remove event listener:
+     document.querySelector(".child").removeEventListener("click", (e)=>{
+          e.stopPropagation();
+          alert("Child is clicked");
+     })
+337. setInterval - For an event to occur again and again. It is a function that takes a function and a time interval.
+     Example:
+     setInterval(() => {
+          document.querySelector(".childContainer").style.backgroundColor = randColorGenerator();
+     }, 1000);
+
+     Time-interval: 1000 = 1 sec
+     Every 1 sec the background color of the class with '.childContainer' changes to a random color.
+338. clearInterval - To stop any event from occuring at any time we use clear interval.
+     Example:
+     clearInterval(setInterval(() => {
+          document.querySelector(".childContainer").style.backgroundColor = randColorGenerator();
+     }, 1000);)
+339. setTimeout - This helps an event to occur with a delay.
+     Example:
+     setTimeout(() => {
+          document.querySelector(".childContainer").style.backgroundColor = randColorGenerator();
+     }, 3000); // The event will occur after a delay of 3 secs for once.
+340. clearTimeOut - To clear timeout. If we change our mind in between an event is occuring and we want to stop the event than we use clear time out.
+     Example:
+     clearTimeout(setInterval(() => {
+        document.querySelector(".childContainer").style.backgroundColor = randColorGenerator();
+     }, 1000);)
+
+JavaScript Callback functions   
+341. Asynchronous nature of JavaScript - Here the functions run independent of each other. If one function has a delay of 2 sec than other functions will proceed to run without waiting for the 1st function to finish it's execution.
+342. Synchronous function - These actions are the actions that initiate and finish one by one.
+342. Let's suppose we have the following JavaScript code:
+
+     console.log("Harry is a hacker");
+     console.log("Rohan is a heckar");
+
+     OUTPUT:
+     Harry is a hacker.
+     Rohan is a heckar.
+
+343. Here is another JS code:
+     
+1->     console.log("Harry is a hacker");
+2->     setTimeout(() => {
+3->            console.log("I am inside timeout");
+4->     }, 2000);
+5->     console.log("Rohan is a heckar");
+
+        OUTPUT:
+        Harry is a hacker.
+        Rohan is a heckar.
+        I am inside timeout.
+
+        In the above code the line 5 gets excecuted before line 3 because of JavaScript's Asynchronous nature. The function setTimeout has a delay of 2 secs so after line 1 is excecuted line 5 gets's executed, in meanwhile the line 3 is still under progress and gets executed after a delay of 2 secs only.
+
+        Given a condition the time interval is 0, in that case also the output will be:
+        OUTPUT:
+        Harry is a hacker.
+        Rohan is a heckar.
+        I am inside timeout.
+344. Callback function - The function that we can pass as an argument into another function is known as a callback function. The callback function is than invoked inside the outer function to complete an action.
+
+     Notes Example:
+     
+
+     Video Example:
+     const callback = (arg) => {         // This function takes an argument and console it.
+         console.log(arg);
+     }
+
+     const loadscript = (src, callback) => {                // A function called 'loadscript' is created which take two arguments 'src'(takes url of a script) and ' callback'(it is a function which will be executed once the function is loaded)
+         let sc = document.createElement("script");        // Creating a new script element
+         sc.src = src;                                    // Setting the source(sc.src) of the script element to the provided 'src'(argument)
+         sc.onload = callback("Harry");                  // Assign an anonymous function to the onload event of the script element. This function will be executed when the script is fully loaded. Inside this function, callback("Harry") is called, passing "Harry" as an argument to the callback function.
+         document.head.append(script);                  // Appending the script element to the head of the document
+     }
+
+     loadscript("https://www.google.com/", callback)   // loadscript function is called
+
+     OUTPUT: Harry
+
+     Doubt:
+     sc.onload = () => callback("Harry"); 
+
+     sc.onload: This is setting an event handler for when the script represented by the sc element has finished loading.
+     () => callback("Harry"): This is an arrow function that serves as the event handler. It's an anonymous function that takes no arguments and immediately calls the callback function with the argument "Harry".
+     So, when the script represented by sc finishes loading, this arrow function gets executed. It then calls the callback function with the argument "Harry". Essentially, it's a concise way to define a function that acts as an event handler and triggers the callback function with the specified argument once the script is loaded.
+
+345. Pyramid of doom/callback hell - When we are going on adding callback function inside another callback function many number of times the whole process gets complicated this is called pyramid of doom.
+
+     Example:
+
+     asyncFunction1(arg1, () => {                  // This is the first callback
+         asyncFunction2(arg2, () => {             // This is the second callback nested inside the first callback
+             asyncFunction3(arg3, () => {        // This is the third callback nested inside the second callback
+                                                // More nested callbacks can go on like this, forming a pyramid
+             });
+         });
+     });
+346. setTimeout also use callback function.
+     setTimeout(() => {
+      console.log("I am inside timeout");
+     }, 0);
+347. Code Explanation:
+     const fn = () => {
+        console.log("Nothing");
+     }
+
+     const callback = (arg, fn) => {
+        console.log(arg);
+        fn()
+     }
+
+     const loadscript = (src, callback) => {
+         let sc = document.createElement("script");
+         sc.src = src;
+         sc.onload = () => {
+             console.log("Script loaded successfully");
+             callback("Harry", fn);
+         };
+         document.head.append(sc);
+     }
+
+     loadscript("promise.js",callback);
+
+Javascript Promises
+348. When we want to manage our code in a proper way we use promises.
+349. Promise - It is a solution to the pyramid of doom/callback hell.
+350. New keyword in JS: The new keyword is used to create instances of user-defined objects or built-in constructor functions. 
+     Example:
+     function Person(name, age) {    // Constructor function
+         this.name = name;
+         this.age = age;
+         this.greet = function() {
+         console.log("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+         };
+     }
+
+     const person1 = new Person("Alice", 30); // Creating instances using 'new'
+351. Promise function is a constructor.
+352. Code Explanation:
+     let prom1 = new Promise((resolve, reject) => {
+         let a = Math.random();
+         if(a<0.5){
+            reject("No random number was not supporting you")
+         }
+         else{
+            setTimeout(() => {
+            console.log("Yes I am done")
+            }, 3000);
+         }
+     })
+
+    prom1.then((a) => {
+       console.log(a)
+       }).catch((err)=>{
+       console.log(err)
+    })
+353. promise.finally - To close the files that are open at the end.
+354. Promise chaining - 
+355. Promise settled - The promise is either resolved or rejected.
+356. Promise resolved - The promise is solved without any error.
+357. Promise reject - The promise has not settled successfully.
+358. Promise race - 
+359. Promise.any
+
+Async/Await
+360. How to wait for data to arrive: (Approach-1)
+
+     Explain with code:
+
+1     function getData(){ // This function will bring data from the server
+2        return new Promise((resolve, reject)=>{       // getData will return a promise
+3        setTimeout(() => {
+4            resolve(455);                     //The getData function will be resolved with value 455.
+5        }, 3500);
+6       })                  
+7      }
+
+8     console.log("Loading modules");
+
+9     console.log("Do something else");
+
+10    console.log("Load data");
+
+11    let data = getData()      // this will return a promise 
+12    console.log(data);
+
+13    console.log("Process data");
+
+14    console.log("task 2");
+
+     OUTPUT:
+     Loading modules
+     Do something else
+     Load data
+     Promise {<pending>}[[Prototype]]: Promise[[PromiseState]]: "fulfilled"[[PromiseResult]]: 455
+     Process data
+
+     Explanation: Let's supoose the console.logs in the above code as the codes for 'loading modules', 'some other task', 'loading data', 'processing data', 'task 2' etc.
+     Starting from the first the modules will be loaded, than some other task will be done after that data will be loaded. Than we will be calling the getData function and the value returned will be stored in data variable.
+     We don't know how much time the getData function will take so meanwhile we can send a resolve promise with value 455. 
+     455 value will be stored in the variable 'data'.
+     As the data is still pending so there is nothing to be processed. Meanwhile task 2 will be done.
+361. After the we get all the data:
+     
+     function getData(){ // This function will bring data from the server     
+        return new Promise((resolve, reject)=>{       // getData will return a promise            
+             setTimeout(() =>                 
+                 resolve(455);                     //The getData function will be resolved with value 455.           
+             }, 3500);       
+        })                  
+     }
+
+     console.log("Loading modules");
+
+     console.log("Do something else");
+
+     console.log("Load data");
+     let data = getData()      // this will return a promise
+
+     data.then((v)=>{
+       console.log(data);
+       console.log("Process data");  
+       console.log("task 2");
+     })
+
+     OUTPUT:
+     Loading modules
+     Do something else
+     Load data
+     Promise {<fulfilled>: 455}[[Prototype]]: Promise[[PromiseState]]: "fulfilled"[[PromiseResult]]: 455
+     Process data
+     task 2
+362. Async await is another new approach to wait for data (Approach-2)
+     
+363. Async function - This function runs in the background. We generally don't bother about this function.
+
+     Example:
+     async function getData() { 
+     
+     }
+
+     If we want to wait for async function than we can do as follows:
+     let data = await getData() // We will put 'await' keyword just before the function call.
+
+     We can only use await inside an async function so we have created the main function:
+     async function main(){
+
+          console.log("Loading modules");
+
+          console.log("Do something else");
+    
+          console.log("Load data");
+          let data = await getData() 
+          console.log(data);
+    
+          console.log("Process data");
+    
+          console.log("task 2");    
+
+      }
+
+      Final Code:
+      async function getData() { // This function will bring data from the server
+         return new Promise((resolve, reject) => { // getData will return a promise
+          setTimeout(() => {
+            resolve(455); //The getData function will be resolved with value 455.
+          }, 3500);
+         })
+      }
+
+      async function main(){
+
+         console.log("Loading modules");
+
+         console.log("Do something else");
+    
+         console.log("Load data");
+         let data = await getData() 
+    
+         console.log(data);
+    
+         console.log("Process data");
+    
+         console.log("task 2");    
+
+      }
+
+      main();
+364. Fetch API
+
+  a. GET Request
+     async function getData() { // This function will bring data from the server
+         let x = await fetch('https://jsonplaceholder.typicode.com/todos/1') // Data will arrive
+         let data = await x.json() // Now the data will parse through this JSON file
+         return 455;
+     }
+
+     async function main(){
+
+         console.log("Loading modules");
+
+         console.log("Do something else");
+    
+         console.log("Load data");
+         let data = await getData() 
+    
+         console.log(data);
+    
+         console.log("Process data");
+    
+         console.log("task 2");    
+
+     }
+
+     main();
+
+ b. POST Request
+    
+365. GET Request - To get any information on the website we use GET Request.
+366. POST Request - To submit anything on the internet safe and securely we use POST Request.
+367. PUT Request - To Update anything on the internet.
+368. DELETE Request - To delete something on the server.
+369. OPTIONS Request - To fetch mete data.
+
+JavaScript Error handling
+370. Fundamentally the prompt returns a string. So if we are entering a number into prompt than we have to convert it into integer for further operations.
+371. parseInt - We can convert any string to integer by using parseInt.
+     Example: parseInt(number);
+372. let a = prompt("Enter first number:");
+
+     let b = prompt("Enter second number:");
+
+     let sum = parseInt(a)+ parseInt(b);
+
+     console.log("The sum is " + sum );
+
+     CASE: If in case we are enter "Harry" as value for 'a' in the prompt and "Rohan" as value for 'b' in the prompt than it will return value as NaN.
+373. Javascript has forgiving nature. It always tries to show less error. But we need the erors to fix our code.
+     We can do so by throw and catch error.
+374. Throw error example:
+     let a = prompt("Enter first number:");
+
+     let b = prompt("Enter second number:");
+
+     if(isNaN(a) || isNaN(b))
+     {
+         throw SyntaxError("Sorry this is not allowed");
+     }
+
+     let sum = parseInt(a)+ parseInt(b);
+     console.log("The sum is " + sum );
+
+     OUTPUT: If we enter "Harry" in a and "Little" in b that the OUTPUT will be "Sorry this is not allowed" in red color.
+375. Try and Catch block error example:
+     let a = prompt("Enter first number:");
+
+     let b = prompt("Enter second number:");
+
+     if(isNaN(a) || isNaN(b))
+     {
+         throw SyntaxError("Sorry this is not allowed");
+     }
+
+     let sum = parseInt(a)+ parseInt(b);
+
+     try {
+         console.log("The sum is " , sum*X );
+     } catch (error) {
+         console.log("Error a gaya bhai");
+     }
+
+     OUTPUT: If we enter 7 as a and 2 as b than the output will be "Error a gaya bhai" in white color. The try block will try to executes it's line but if any error occurs than catch block will be executed.
+376. Try and catch is a synchronous function.
+377. Finally clause - This is used to execute the code inside a function after the return statement.
+     let a = prompt("Enter first number:");
+     let b = prompt("Enter second number:");
+
+     if(isNaN(a) || isNaN(b))
+     {
+         throw SyntaxError("Sorry this is not allowed");
+     }
+
+     let sum = parseInt(a)+ parseInt(b);
+
+     function main() {
+         let x = 1;
+         try {
+             console.log("The sum is " , sum * x );
+             return true;
+         } catch (error) {
+             console.log("Error a gaya bhai");
+             return false;
+         }
+         finally{
+             console.log("The progrom got finished and db is closed.");
+         }   
+     }
+
+     let c = main();
+
+     OUTPUT: 
+     The sum is  9
+     The progrom got finished and db is closed.
+
+     Even after the return statements the finally block gets executed.
+378. If we don't use finally block than:
+     Example:
+     let a = prompt("Enter first number:");
+     let b = prompt("Enter second number:");
+
+     if(isNaN(a) || isNaN(b))
+     {
+         throw SyntaxError("Sorry this is not allowed");
+     }
+
+     let sum = parseInt(a)+ parseInt(b);
+
+     function main() {
+         let x = 1;
+         try {
+             console.log("The sum is " , sum * x );
+             return true;
+         } catch (error) {
+             console.log("Error a gaya bhai");     
+             return false;
+         }
+             console.log("The progrom got finished and db is closed.");
+
+     }
+
+     let c = main();     
+
+     OUTPUT:
+     The sum is 6.
+
+Object Oriented Programming
+379. Object - JavaScript objects are containers for named values called properties and methods.
+380. Creating an object:
+     let obj = {
+       a: 1,
+       b: "Harry"
+     }
+
+381. Prototype - The additional properties of an object are known as prototypes.
+382. Setting prototype of an object:
+     let animal = {
+       eats: true
+     };
+
+    let rabbit = {
+      jumps: true
+    };
+
+    rabbit.__proto__ = animal; // sets rabbit.[[prototype]] = animal
+
+    console.log(rabbit);
+
+    OUTPUT: 
+    
+    {jumps: true}
+     jumps: true
+     [[Prototype]] : Object
+       eats : true
+       [[Prototype]] : Object
+
+383. We can do proper object oriented programming using JavaScript classes.
+384. Creating a class:
+     class className(){
+          methods...
+     }
+385. Creating an object of the class:
+     let objectName = new className();
+386. Constructor - It is a special method that is automatically called when a class is instantiated using the new keyword. It is used to initialize the newly created object.
+387. Object creation example:
+
+     class Animal {   // Animal class
+         constructor() {
+             console.log("Object is created...")
+         }
+
+         eats() {
+             console.log("Eating...")
+         }
+         jumps() {
+             console.log("Jumping...");
+         }
+     }
+
+     let a = new Animal(); // 'a' is an object of class Animal
+     console.log(a);
+388. Setting properties of a class:
+
+     class Animal {
+         constructor(name) {
+             this.name = name;  // In Animal class, the constructor takes a parameter name, and assigns it to the name property of the instance using this.name = name;.
+             console.log("Object is created...")
+         }
+
+         eats() {
+             console.log("Eating...")
+         }
+         jumps() {
+             console.log("Jumping...");
+         }
+     }
+
+     let a = new Animal("Bunny"); // passing "Bunny" as the name parameter, and the name property of the a object will be set to "Bunny".
+     console.log(a);
+
+     OUTPUT:
+     Object is created...
+     Animal {name: 'Bunny'}
+     name : "Bunny"
+     [[Prototype]] : Object
+389. Inheritance : This can be done using 'extends' keyword.
+     
+     Example:
+     class Animal {    // Super class
+    
+     }
+
+     class Lion extends Animal{   // Sub class - The class Lion extends class Animal. So class Lion inherits all the properties of class Animal.
+
+     }
+390. When we don't use the 'super' keyword:
+     class Animal {
+         constructor(name) {
+             this.name = name;  // In Animal class, the constructor takes a parameter name, and assigns it to the name property of the instance using this.name = name;.
+             console.log("Object is created...")
+         }
+     }
+
+     class Lion extends Animal{
+         constructor(name){
+             this.name = name
+             console.log("Object is created and he is a lion...")
+         }
+     }
+
+     let a = new Animal("Bunny"); // passing "Bunny" as the name parameter, and the name property of the a object will be set to "Bunny".
+     let b = new Lion("shera");
+     console.log(a);
+     console.log(b);
+
+     OUTPUT: The above code will throw an error.
+     Uncaught ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor at new Lion
+
+     SOLUTION: We have to derive the constructor of Animal class into Lion class using 'super' keyword.
+391. Using the super keyword - 1:
+     class Animal {
+         constructor(name) {
+             this.name = name;  // In Animal class, the constructor takes a parameter name, and assigns it to the name property of the instance using this.name = name;.
+             console.log("Object is created...")
+         }
+     }
+
+     class Lion extends Animal{
+         constructor(name){
+             super(name);
+             console.log("Object is created and he is a lion...")
+         }
+     }
+
+     let a = new Animal("Bunny"); // passing "Bunny" as the name parameter, and the name property of the a object will be set to "Bunny".
+     let b = new Lion("shera");
+     console.log(a);
+     console.log(b);
+
+     OUTPUT:
+     Object is created...
+     Object is created...
+     Object is created and he is a lion...
+     Animal {name: 'Bunny'}
+     Lion {name: 'shera'}
+392. Method overriding - The subclass provides a specific implementation of a method that is already defined in its superclass. 
+
+     Example:
+     class Animal {
+         constructor(name) {
+             this.name = name;  
+             console.log("Object is created...")
+         }
+         eats() {
+            console.log("Eating...")  // eats() method is declared in the super class.
+         }
+         jumps() {
+            console.log("Jumping...");
+         }
+     }
+
+     class Lion extends Animal{
+         constructor(name){
+             super(name);
+             console.log("Object is created and he is a lion...")
+         }
+         eats() {
+             console.log("Hunting and eating"); // eats() method is redeclared in the sub class with a different console log statement.
+         }
+     }
+
+     let a = new Animal("Bunny"); // passing "Bunny" as the name parameter, and the name property of the a object will be set to "Bunny".
+     let b = new Lion("shera");
+     console.log(a.eats());
+     console.log(b.eats());
+
+     OUTPUT:
+     Object is created...
+     Object is created...
+     Object is created and he is a lion...
+     Eating...             // This is because of the eats method in Animal super class.
+     undefined
+     Hunting and eating   // // This is because of the eats method, that gets overriden in Lion sub class.
+     undefined
+393. Using Super keyword - 2:
+
+     Example:
+     class Animal {
+         constructor(name) {
+             this.name = name;  
+             console.log("Object is created...")
+         }
+         eats() {
+            console.log("Eating...")  // eats() method is declared in the super class.
+         }
+         jumps() {
+            console.log("Jumping...");
+         }
+     }
+
+     class Lion extends Animal{
+         constructor(name){
+             super(name);
+             console.log("Object is created and he is a lion...")
+         }
+         eats() {
+             super.eats();    // Used here
+             console.log("Hunting and eating"); // eats() method is redeclared in the sub class with a different console log statement.
+         }
+     }
+
+     let a = new Animal("Bunny"); // passing "Bunny" as the name parameter, and the name property of the a object will be set to "Bunny".
+     let b = new Lion("shera");
+     console.log(a.eats());
+     console.log(b.eats());
+394. instanceof - To check if an object is instance of a class or not. 
+                  The object of sub class is an instance of both sub class and super class.
+     Example:
+     class Animal {
+         
+     }
+
+     class Lion extends Animal{
+         
+     }
+
+     let a = new Animal("Bunny"); 
+     let b = new Lion("shera");
+
+     OUTPUT:
+     a instanceof Animal // true
+     l instanceof Lion  // false
+     l instanceof Animal // true
+     a instanceof Lion // false
+395. Static keyword - 
+396. Getter and Setter - 
+
+Advanced JavaScript
+397. IIFE - immediately Invoke Function Expression.
+398. Destructuring - The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+     Example-1:
+     let [x, y] = [1,5]
+     console.log(x, y)
+
+     OUTPUT:
+     1 5
+
+     Example-2:
+     let [x, y, ...rest] = [1,5, 7, 9, 10]
+     console.log(x)
+     console.log(y) 
+     console.log(rest)
+
+     OUTPUT:
+     1
+     5
+     (3) [7, 9, 10] // The rest variable will take the other array elements (7,9,10)
+
+     Example-3:
+     let [x, y, rest] = [1,5, 7, 9, 10]
+     console.log(x)
+     console.log(y) 
+     console.log(rest)
+
+     OUTPUT:
+     1
+     5
+     7
+399. When we want to take selected elements from the object.
+     Example:
+     let obj = {
+        a: 1,
+        b: 2,
+        c: 3 
+     }
+
+     let {a,c} = obj;
+
+     console.log(a,c);
+
+     OUTPUT:
+     1
+     3
+400. Spread operator: (...arr)
+
+     Example-1:
+     let arr = [1, 4, 6];
+     const obj = {...arr} // Spread operator
+     console.log(obj);
+
+     OUTPUT:
+     {0: 1, 1: 4, 2: 6}
+
+     Example-2: To calculate the sum of all theelements of an array.
+     function sum(a, b, c)
+     {
+         return a+b+c;
+     }
+
+     let arr = [1, 4, 6];
+
+     console.log(sum(arr[0], arr[1], arr[2])); // Method-1 to calculate
+     console.log(sum(...arr)); // Method-2 to extract each element of the array.
+
+     '...arr' is same as {0:1, 1:7, 2:11}
+401. Local, Global, Block scope
+
+     Block Scope - 'let' and 'const' provide block level scope, which means that the variable declared inside a { } cannot be accessed outside the block.
+
+     Example:
+     {
+          let a = 27; 
+     }
+     // a is not available here
+
+     Local scope - A variable declared inside a JS function becomes local to that function.
+
+     Global scope - A variable declared outside a function becomes global.
+402. Hoisting - It is the process where the interpreter appears to move the declarations to the top of the code before execution.
+                Variables can thus be referenced before they are declared in javascript.
+
+     Example-1:
+     console.log(a);
+     var a = 5;
+
+     OUTPUT:
+     undefined
+
+     Example-2:
+     console.log(a);
+     let a = 5;
+
+     OUTPUT:
+     script.js:35 Uncaught ReferenceError: Cannot access 'a' before initialization
+
+     Example-3:
+     
+
+
+403. We can only do hoisting in 'var' not 'let' and 'const'.
+
+API
+404. API's are endpoints of an URL that return data to the user. Imagine it as the kitchen of a resturant. 
+     As a user(customer in a returant) we give order through the URL(waiter) to bring us specific data(specific dish). 
+     Then the API(the kitchen) prepares the data(dish) and bring back to the user(customer).
+405. https://www.google.com/
+                 |_________|
+                      |
+                     API( End point of URL)
+406. Fetch API - It is used to send and receive data.
+407. By using Fetch API we mean that we will be using the 'fetch()' method.
+408. The fetch method uses request and response objects.
+408. The Fetch method generally returns a promise.
+409. Syntax:
+     let promise = fetch(URL, [options])
+410. Fetch API (Simple code):
+     const URL = "https://cat-fact.herokuapp.com/facts";
+
+     const getFacts = async () =>{
+         console.log("getting data...");
+         let response = await fetch(URL);
+         console.log(response);
+     }
+
+     getFacts();
+
+     Explanation:
+     We decalre a const variable named 'URL' and store the URL(API endpoint) from where we have to fetch the data.
+     We will be using async-await method for this.
+     So, we will declare an async arrow function name 'getFacts' as 'const getFacts = async () =>{...}'.
+     To fetch the data we will be using the 'fetch()' method with 'URL' variable as argument.
+     We know that 'fetch()' method will take some time to fetch the whole data. Till all the data is fetched it returns a promise.
+     So we will be using 'await' keyword infront of the fetch method.
+     By using 'await' keyword the 'getFacts' function will wait till the promise returned by 'fetch()' method is resolved before proceeding to the next line. 
+     After some time after the promise is resolved it is stored inside 'response' variable. Than we will be console logging in the response.
+     The response is an object as promises are object.
+
+     OUTPUT:
+     getting data...
+     Promise {<pending>}
+     Response {type: 'cors', url: 'https://cat-fact.herokuapp.com/facts', redirected: false, status: 200, ok: true, …}
+
+     CODE(To print the status of the response): 'status' is a property of the response(object).
+     const URL = "https://cat-fact.herokuapp.com/facts";
+
+     const getFacts = async () =>{
+         console.log("getting data...");
+         let response = await fetch(URL);
+         console.log(response.status);
+     }
+
+     getFacts();
+
+     OUTPUT:
+     getting data...
+     200             //status 200 means a successfull response.
+411. When we are fetching data the data may arrive in different formats. 
+     AJAX : In earlier days user used to receive data in AJAX format i.e, Asynchronous JS and XML.
+     JSON : Nowdays we are getting the data in object like format i.e, JSON format.
+412. Depending on the type of format the data has arrived we do the data processing for different data formats differently.
+413. json() method : For converting our response from JSON format to usable data (JS object format) we use the 'json()' method.
+                     This method also returns a promise.
+                     It is also an asynchronous method so we use 'await' keyword beforehand.
+     
+     Example:
+     const URL = "https://cat-fact.herokuapp.com/facts";
+
+     const getFacts = async () =>{
+         console.log("getting data...");
+         let response = await fetch(URL);
+         console.log(response);
+         let data = await response.json();
+         console.log(data);
+     }
+
+     getFacts();
+
+     Explanation: In the above code we have tried to retrieve the usable data using '.json()' method.
+     The 'response' variable stores data in JSON format.
+     To get data in JS object format we use 'json()' method on the 'response' variable.
+     The 'data' variable stores the usable data i.e, JS object format.
+
+     OUTPUT:
+     getting data...
+
+     Response {type: 'cors', url: 'https://cat-fact.herokuapp.com/facts', redirected: false, status: 200, ok: true, …}
+
+     (5) [{…}, {…}, {…}, {…}, {…}]
+     0: {status: {…}, _id: '58e008780aac31001185ed05', user: '58e007480aac31001185ecef', text: 'Owning a cat can reduce the risk of stroke and heart attack by a third.', __v: 0, …}
+     1: {status: {…}, _id: '58e009390aac31001185ed10', user: '58e007480aac31001185ecef', text: 'Most cats are lactose intolerant, and milk can cau…our cat the standard: clean, cool drinking water.', __v: 0, …}
+     2: {status: {…}, _id: '588e746706ac2b00110e59ff', user: '588e6e8806ac2b00110e59c3', text: 'Domestic cats spend about 70 percent of the day sleeping and 15 percent of the day grooming.', __v: 0, …}
+     3: {status: {…}, _id: '58e008ad0aac31001185ed0c', user: '58e007480aac31001185ecef', text: "The frequency of a domestic cat's purr is the same at which muscles and bones repair themselves.", __v: 0, …}
+     4: {status: {…}, _id: '58e007cc0aac31001185ecf5', user: '58e007480aac31001185ecef', text: 'Cats are the most popular pet in the United States…here are 88 million pet cats and 74 million dogs.', __v: 0, …}
+     length: 5
+     [[Prototype]]: Array(0)
+414. Printing data on HTML page:
+     const URL = "https://cat-fact.herokuapp.com/facts";
+     const factPara = document.querySelector('.fact');
+     document.getElementsByClassName
+
+     const getFacts = async () =>{
+         console.log("getting data...");
+         let response = await fetch(URL);
+         console.log(response);
+         let data = await response.json();
+         factPara.innerText = data[0].text;
+     }
+
+     getFacts();
+
+     OUTPUT:
+     Owning a cat can reduce the risk of stroke and heart attack by a third.' - printed on HTML page
+415. HTTP Verbs: These are the types of HTTPS methods or request methods.
+     a. GET Method
+     b. POST Method
+     c. DELET Method
+     d. PATCH Method
+416. HTTP Response Status code:
+     a. Informational responses (100 – 199)
+     b. Successful responses (200 – 299)
+     c. Redirection messages (300 – 399)
+     d. Client error responses (400 – 499)
+     e. Server error responses (500 – 599)
+     
+                                                        BACKEND
+
+                                                        NODE JS (https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
+417. To run JS for backend we use node.js.
+418. To initialize NodeJS project : 'npm init'.
+419. To open the NodeJS project server : 'node ./fileName.js'
+420. To install any node package : 'npm i packageName' or 'npm install packageName'.
+421. To install multiple packages at a time : 'npm i package1 package2 package3 .......'
+422. To install nodemon : 'npm install --global nodemon'
+423. To open NodeJS project server with nodemon : nodemon fileName.js
+424. There are 2 ways of creating modules in NodeJS:
+     a. ECMAScript ES6
+     b. CommonScript
+425. Modules: Different codes that we have borrowed from someone to use in our script.
+426. There are 2 types of script:
+     a. CommonScript
+     b. ECMAScript ES6
+427. Importing modules in CommonScript:
+     'require()' method - To import any module we will use the require() method in CommonScript.
+     Example:
+     const http = require('node:http');
+428. Importing modules in ECMAScript("type": "module"):
+     import http from "http"
+429. There are two types of export:
+     a. Named export
+     b. Default export
+430. Named Export ("type": "module"):
+     Lets suppose we have to export some variables from one javascript(mymodule.js) file to another(main.js).
+
+             mymodule.js                                        main.js
+     export const a = 1 //named export              import {a, b} from "./mymodule.js"
+     export const b = 2 //named export              console.log(a ,b)
+     export const c = 3 //named export
+     export const d = 4 //named export
+     export const e = 5 //named export
+
+     Explanation: In the above code we are exporting the constant variables a, b, c, d, e in the file 'mymodule.js'.
+                  Then the constant variables a and b are imported into the file 'main.js'.
+                  We are exporting and importing the variables using the same name hence it is known as named export.
+     OUTPUT:
+     1 2    
+431. Default export ("type": "module"):
+     Lets suppose we have to  export an object from one javascript(mymodule.js) file to another(main.js).
+
+          mymodule.js                                         main.js
+     let obj;                                      import little from "./mymodule.js"
+     export default obj = {                        console.log(little);
+         x:5,
+         y:7
+     }
+
+    Explanation: In the above code we are exporting an object named obj from file 'mymodule.js'.
+                 Then the object is imported into the file 'main.js' using a different name 'little'.
+                 We can import and export using two different name shere hence it is known as default export.
+
+    OUTPUT: 
+    { x: 5, y: 7 }
+432. Using require() method(CommonScript):
+                            mymodule2.js                                           main.js
+                       let c = 56;                                       const a = require("./mymodule2.js")
+                       module.exports = c;                               console.log(a)
+433. Connecting the module files to the html file.
+
+                        index.html File                                                              
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+     </head>
+     <body>
+         <script type="module" src="mymodule.js"></script>     // connecting mymodule.js to index.html
+         <script type="module" src="main.js"></script>         // connecting main.js to index.html
+     </body>
+     </html>
+
+                     mymodule.js File
+     let obj;
+     export default obj = {
+         x:5,
+         y:7
+     }
+
+                     main.js
+     import little from "./mymodule.js"
+     console.log(little);
+
+     OUTPUT(printed on the console of index.html web page):
+     {x: 5, y: 7}
+     x: 5y: 7
+     [[Prototype]]: Object
+434. Any code we are writing inside the module gets wrapped inthe following function:
+     (function (exports, require, module, __filename, __dirname) {
+
+         // Module code actually lives here
+
+     });
+435. 'fs' module (file system module)
+436. writeFileSync Function ("type": "commonjs")- It is an synchronous function.
+
+     CODE:
+     const fs = require("fs");
+
+     console.log("starting...");
+     fs.writeFileSync("harry.text", "Harry is a good boy");
+     console.log("Ending...");
+
+     OUTPUT: First the 'starting...' is printed to the console. The second line 'fs.writeFileSync' gets executed and a  text file named 'harry' gets created with 'Harry is a good boy' text inside it. Then 'Ending...' gets printed to the console.
+
+     starting...
+       harry.text File
+     Harry is a good boy.
+     Ending...
+437. writeFile ("type": "commonjs")- It is an asynchronous function.
+
+     CODE:
+     const fs = require("fs");
+
+     console.log("starting...");
+     fs.writeFile("harry2.txt", "Harry2 is a good boy", ()=>{
+             console.log("Done");
+     });
+     console.log("Ending...");
+
+     OUTPUT: First 'starting..' gets printed on the console. Then 'fs.writeFile' starts getting executed but it takes some time so the next line gets executed side by side and 'ending...' gets printed. After 'writeFile' gets executed harry2.txt file gets created and 'done' is printed.
+
+     starting...
+     Ending...
+          harry2.txt
+     Harry2 is a good boy.
+     Done
+438. readFile ("type": "commonjs")- It allows us to read a file.
+
+     CODE:
+     console.log("starting...");
+     fs.writeFile("harry2.txt", "Harry2 is a good boy", ()=>{
+          console.log("Done");
+          fs.readFile("harry2.txt", (error, data)=>{
+               console.log(error, data.toString());
+          })
+     });
+     console.log("Ending...");
+
+     OUTPUT: We are reading the 'harry2.txt' file and printing both the error and data.                As there is no error so 'null' gets printed.
+             In data 'Harry2 is a good boy' gets printed.
+
+     starting...
+     Ending...
+     Done
+     null Harry2 is a good boy
+439. callback hell in fs module ("type": "commonjs")
+     fs.writeFile("harry2.txt", "Harry2 is a good boy", ()=>{
+          console.log("Done");
+          fs.readFile("harry2.txt", (error, data)=>{
+               console.log(error, data.toString());
+               //again
+               fs.writeFile("harry2.txt", "Harry2 is a good boy", ()=>{
+                    console.log("Done");
+                    fs.readFile("harry2.txt", (error, data)=>{
+                         console.log(error, data.toString());
+                         //again
+                         fs.writeFile("harry2.txt", "Harry2 is a good boy", ()=>{
+                              console.log("Done");
+                              fs.readFile("harry2.txt", (error, data)=>{
+                              console.log(error, data.toString());
+                              })      
+                         })
+                    })      
+               })
+          })   
+     })
+440. appendFile ("type": "commonjs")- It is used to append/add something to our file.
+        
+     CODE:
+     fs.appendFile("harry.txt", "harryrobo", (e, d)=>{
+          console.log(d);
+     })
+
+     OUTPUT: 'harryrobo' gets appended at the end in 'harry.txt' file.
+
+          harry.txt
+     Harry is a good boyharryrobo
+441. To escape from callback hell in fs module we have another module that uses promises:
+        
+442. readFile ("type": "module")
+
+     CODE:
+     import fs from "fs/promises"
+     let a = await fs.readFile("harry.txt")
+     console.log(a.toString());
+
+     OUTPUT:
+     'Harry is a good boyharryrobo' is printed on the console.
+     We are not using the 'await' keyword inside any async function because we are inside a module.
+443. writeFile ("type": "module")
+
+     CODE:
+     import fs from "fs/promises"
+
+     let b = await fs.writeFile("harry.txt", "this is an amazing promise");
+
+     OUTPUT: 'this is an amazing promise' is written inside 'harry.txt' file.
+         harry.txt
+     this is an amazing promise
+444. appendFile ("type": "module")
+
+     CODE:
+     import fs from "fs/promises"
+
+     let c = await fs.appendFile("harry.txt", "Hello Lewis")
+
+     OUTPUT:
+     Before Append:
+        harry.txt
+     this is amazing promise
+
+     After Append:
+        harry.txt
+     this is amazing promiseHello Lewis
+445. 'path' Module - The path module in Node.js provides utilities for working with file and directory paths.
+446. path.extname() ("type": "module")- It returns the extension of the file.
+     CODE:
+     import path from "path"
+
+     let myPath = "C:\\Users\\KIIT\\Documents\\Sigma WEB DEV\\Sigma-Web-Dev-Course\\Video 87\\harry.txt "
+     console.log(path.extname(myPath))
+
+     OUTPUT:
+     .txt
+447. basename() ("type": "module")- It returns the last portion of a path, which is typically the file name.
+     CODE:
+     import path from "path"
+
+     let myPath = "C:\\Users\\KIIT\\Documents\\Sigma WEB DEV\\Sigma-Web-Dev-Course\\Video 87\\harry.txt "
+
+     console.log(path.basename(myPath));
+
+     OUTPUT:
+     harry.txt
+448. path() ("type": "module")- The join method in the Node.js path module is used to join multiple path segments into a single path. 
+              This method ensures that the resulting path is normalized, meaning unnecessary . and .. segments are resolved, and redundant slashes are removed. 
+              The method uses the platform-specific path separator (e.g., / on POSIX systems and \ on Windows).
+     CODE:
+     import path from "path"
+
+     console.log(path.join("c:/", "programs\\harry.txt"))
+
+     OUTPUT:
+     c:\programs\harry.txt
+
+                                                        ExpressJS(https://expressjs.com/en/starter/installing.html)
+449. ExpressJS is a framework  for web development using NodeJS.                                                 
+450. ExpressJS is a web framework.
+451. Express.js is a package that can be imported and used as a module in a Node.js application.
+452. Why should we use ExpressJS?
+
+     a. Simplified Routing:  Easy-to-use API for defining routes and handling different HTTP methods.
+
+     b. Middleware Support:  Built-in middleware support and easy integration of custom or third-party middleware.
+
+     c. Easier Handling of HTTP Methods:  Simplified handling of various HTTP methods with corresponding methods (e.g., `app.get`, `app.post`).
+
+     d. Ecosystem and Community:  Large ecosystem with a wealth of middleware, plugins, and tools.
+
+     e. Error Handling:  Streamlined error handling with centralized error middleware.
+
+     f. Request and Response Handling:  Simplified processing of requests and responses, including parsing request bodies and setting response headers.
+
+     g. Template Engine Support:  Built-in support for various template engines like EJS, Pug, and Handlebars.
+
+     h. Static File Serving:  Easy serving of static files (e.g., HTML, CSS, JS) with built-in middleware.
+
+     i. Scalability and Maintainability:  Cleaner and more maintainable code structure, making it easier to scale applications.
+
+     j. Flexibility:  Highly customizable and flexible framework that can be tailored to fit specific needs.
+453. To install express: npm i express
+454. To install specific version of express: npm i express@versionNumber. 
+     Ex - npm i express@3
+455. Hello World program in ExpressJS:
+     CODE:
+     const express = require('express') // 'express' package being imported using require() method.
+     const app = express() // Creates an instance(app) of Express application by calling the `express()` function.
+     const port = 3000 // Sets a port number for the server where our server will listen for incoming requests.
+
+     // app.get or app.post or app.put or app.delete(path, handler)
+     app.get('/', (req, res) => {  // Defines a route that responds with "Hello World!" when someone visits the root URL (`\`).
+       res.send('Hello World!')    // req and res are objects
+     })
+
+     app.listen(port, () => { // Starts the server and listens for requests on the specified port, printing a message to the console when it starts.
+       console.log(`Example app listening on port ${port}`)
+     })
+
+     Explanation: 
+     app.get('/'): This means we are setting up a route that listens for GET requests at the root URL ("/").
+     (req, res) => { res.send('Hello World!'); }: This is a callback function that tells the server what to do when it receives a GET request at the root URL.
+                                                  req stands for the request object, which contains details about the request.
+                                                  res stands for the response object, which we use to send a response back to the client.
+     res.send('Hello World!'): This sends the text "Hello World!" back to the client who made the request.    
+
+     OUTPUT:
+     'Hello World!' gets printed on 'localhost:3000' server.
+456. ':slug' is a URL parameter, which means it can match any value at that position in the URL.
+456. Without the use of ':slug':
+     
+       CODE:
+1      const express = require('express') // 'express' package being imported using require() method.
+2      const app = express()
+3      const port = 3000
+
+4      app.get('/', (req, res) => {
+5          res.send('Hello World2 hello lewis!')
+6      })
+
+7       app.get('/blog/intro-to-js', (req, res) => {
+8           res.send('hello intro to js')
+9       })
+10      app.get('/blog/intro-to-python', (req, res) => {
+11          res.send('hello intro to python')
+12      })
+
+13     app.listen(port, () => {
+14         console.log(`Example app listening on port ${port}`)
+15     })
+
+       Explanation: In line 7 and 10 we are creating almost similar URLs and the content inside it.
+                    But we can't do it manually everytime. So we will use ':slug'.
+     
+       OUTPUT:
+       'hello intro to js' gets printed on the 'localhost:3000/intro-to-js'.
+       'hello intro to python' gets printed on the 'localhost:3000/intro-to-python'.
+457. Using ':slug'
+     Instead of the above code we can simplify it by using ':slug'.
+
+       CODE:
+1      const express = require('express') // 'express' package being imported using require() method.
+2      const app = express()
+3      const port = 3000
+
+4      app.get('/', (req, res) => {
+5          res.send('Hello World2 hello lewis!')
+6      })
+
+7      app.get('/blog/:slug', (req, res) => {
+8           res.send(`hello ${req.params.slug}`)
+9      })
+
+10     app.listen(port, () => {
+11         console.log(`Example app listening on port ${port}`)
+12     })
+
+       Explanation: 'req.params.slug' accesses the 'slug' parameter from the URL. 
+                    For instance, if the URL is '/blog/hello-world', then 'req.params.slug' would be "hello-world".
+
+       OUTPUT:
+       'hello intro to js' is printed on 'localhost:3000/blog/intro to js'.
+       'hello intro to python' is printed on 'localhost:3000/blog/intro to python'.
+458. Request Parameters and Query in Express: The terms "params" and "query" refer to different parts of a URL that are commonly used in frameworks like Express.js.
+    
+     For the URL : http://localhost:3000/blog/intro%20to%20python?mode=dark&region=in
+     console.log(req.params); // OUTPUT will be { slug: 'intro to python' } 
+     console.log(req.query); // OUTPUT will be { mode: 'dark', region: 'in' }
+459. Static Files : Static files refer to any files that are send directly to clients without any processing by the server.
+                    Express.js provides built-in middleware called express.static to serve these static files.
+460. We will send the static files:
+     a. We will create a file called 'public' where we will store our all static files.
+     b. Then we will write the code line 'app.use(express.static('public'))' in our JS file.
+     c. Now we can serve the static files to the client.
+461. What is the need of using this static files?
+
+     By keeping certain files as static files we we only share those files without at the risk of sending any other files to the client. 
+     Lets suppose we don't want to share any of our backend code but there's a text file we want to share with our client. 
+     Then we can use static file inside which we will keep the text file that would be shared.
+462. GET Request:
+     a. By default the request used by browser is GET Request.
+     b. We can't afford to send sensitive information using GET request because that will come in the server logs.
+     c. It also has character limit upto 2048 characters which we can send certain data.
+463. POST Request: Sometimes we have to send sensitive information like passwords, email etc on the server by using POST Request.
+
+     The file system is:
+     project-root/
+     ├── main.js
+     └── public/
+         └── mypage.html
+
+     
+                  Creating POST Request:-                                                        Checking POST Request is working or not using Fetch API:-
+                       (main.js)                                                                               (mypage.html)
+             const express = require('express')                                                                <!DOCTYPE html>
+             const app = express()                                                                             <html lang="en">
+             const port = 3000
+                                                                                                               <head>
+             app.use(express.static("public"))                                                                     <meta charset="UTF-8">
+                                                                                                                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             app.post('/', (req, res) => {                                                                         <title>Testing POST Request</title>
+                  console.log("Hey it's post request");                                                        </head>
+                 res.send('Hello World post!')                
+             })                                                                                                <body>
+                                                                                                                   <script>
+             app.listen(port, () => {                                                                                  async function testPost() {
+                 console.log(`Example app listening on port ${port}`)                                                      let a = await fetch("/", {method: "POST"});
+             })                                                                                                            let b = await a.text();
+                                                                                                                           console.log(b);
+                                                                                                                       }
+                                                                                                                       testPost();
+                                                                                                                   </script>
+                                                                                                              </body>
+
+                                                                                                              </html>  
+                                                                                           
+Explanation:a. The express module is called using the require method which                Explanation:a. We have created this file 'mypage.html' and stored in the public
+               is stored in the variable called express.                                                 file directory.
+            b. Than an instance (app) of the express is created.                                      b. We will be checking if our POST request we have created in main.js
+            c. A variable 'port' is declared with number 3000.                                           is working or not using Fetch API.
+            d. `express.static` is a built-in middleware function in Express                          c. We will be using async-await.
+               that allows us to serve static files(here mypage.html).                                d. We have created a async function called 'testPost' to make an 
+            e. 'public' is the name of the directory where our static files                              asynchronous POST request to a specified URL using the Fetch API 
+               are located. When we pass 'public' to express.static, it tells                            and log the response body to the console.
+               Express to look for static files in the public directory of our                        e. 'await fetch("/", {method: "POST"})' initiates a POST request to 
+               project.                                                                                  the root URL ("/") using the Fetch API's fetch() function.
+            f. `app.use` is a method to mount middleware functions in an Express                      f. The fetch() function returns a Promise that resolves to a 
+               application.                                                                              Response object representing the response to the request.
+            g. The post method is used to send data on the server and define a                        g. The response received is 'Hello World post!' that was send in 'main.js'
+               route handler for HTTP POST requests. It takes two arguments.                             using res.send.
+               First the URL path and second a callback function.                                     h. The response is stored in variable 'a'.
+            h. "/" specifies the URL path for which this handler will be executed.                    i. 'await a.text()' waits for the text() method of the Response object (a) 
+            i. The callback function will be executed when the server receives a                         to resolve.The text() method returns a Promise that resolves to the 
+               POST request to the specified path.                                                       response body as text.
+            j. The callback function takes two objects(response and request)                          j. Again the response's text format is extracted and stored in 'b'.
+               as arguments.                                                                          k. Then we console logged 'b' and the message 'Hello World post!' is printed 
+            k. The request object, containing information about the HTTP                                 on the browser's terminal.
+               request (e.g., request headers, body, parameters).
+            l. The response object, used to send a response back to the client.
+            m. Once the POST request is received 'Hey it's post request' is console
+               logged on the nodemon server.
+            n. We are using res.send() to send a confirmation message 'Hello World 
+               post!'to the client that the operation is successful. 
+            o. 'listen()' method is called on the Express application (app) to 
+               start the server and listen for incoming connections.
+            p. The port parameter specifies the port number on which the server 
+               should listen. Incoming HTTP requests will be routed to this port.
+            q. Then the arrow function is executed once the server has started listening 
+               for connections and is ready to accept incoming requests.
+            r. Example app listening on port 3000 is printed on the nodemon terminal.                                                                                                                                                console.log(b);
+
+464. PUT Request: To update anything we use PUT Request.
+465. Chaining of Request:
+     app.get('/', (req, res) => {
+         console.log("Hey it's a get request");
+         res.send('Hello World!')
+     }).post('/', (req, res) => {
+         console.log("Hey it's post request");
+         res.send('Hello World post!')
+     }).put('/', (req, res) => {
+         console.log("Hey it's put request");
+         res.send('Hello World put!')
+     }).delete('/', (req, res) => {
+         console.log("Hey it's delete request");
+         res.send('Hello World delete!')
+     })
+466. sendFile method : sendFile method helps us to send files as the response to a client request. 
+                       This method is useful when you need to serve static files like HTML, images, or any other type of file.
+467. Sending a HTML File:
+     The HTML file(index.html) that we have to send is:
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+     </head>
+     <body>
+         <b>Hey I am bold</b>
+         This is index.html
+     </body>
+     </html>
+
+     The GET Request file (main.js):
+     const express = require('express')
+     const app = express()
+     const port = 3000
+
+     app.use(express.static("public"))
+
+     app.get("/index", (req, res) => {
+         console.log("Hey it's index");
+     res.sendFile('templates/index.html', {root: __dirname}) 
+     })
+
+     app.listen(port, () => {
+         console.log(`Example app listening on port ${port}`)
+     })
+
+468. Sending a JSON file:
+     app.get("/api", (req, res) => {
+         res.json({a: 1, b: 2, c: 3, d: 4, e: 5})
+     })
+469. Routes : These are helpful for maintaining and organizing different route files (JS files). 
+              They define the endpoints of an application, specifying how it responds to client requests for various HTTP methods and URLs.
+470. How to maintain routes?
+     a. Create a folder named 'routes'.
+     b. Then create route file (JS files) inside 'routes' folder. For example a route file to maintain blogs 'blog.js'
+         
+                                   blog.js
+                   const express = require('express')
+                   const router = express.Router()
+
+                   // define the home page route
+                   router.get('/', (req, res) => {
+                     res.send('Blog home page')
+                   })
+
+                   // define the about route
+                   router.get('/about', (req, res) => {
+                     res.send('About blog')
+                   })
+
+                   // define the blogpost route
+                   router.get('/blogpost/:slug', (req, res) => {
+                       res.send(`Fetch the blogpost for ${req.params.slug}`)
+                   })
+
+                   module.exports = router
+     c. Then update the main.js file:
+                               main.js
+                  const express = require('express')
+                  const blog = require('./routes/blog')
+
+                  const app = express()
+                  const port = 3000
+
+                  app.use(express.static("public"))
+                  app.use('/blog', blog)
+
+                  app.listen(port, () => {
+                      console.log(`Example app listening on port ${port}`)
+                  })
+471. Middleware - In express, middlewares are useful for handling requests, processing response between receiving a request and sending a response.
+472. Simple use of built-in middleware:
+               main.js
+     const express = require('express')
+     const app = express()
+     const port = 3000
+
+     app.use(express.static("public"))   // built-in middleware
+
+     app.get('/', (req, res) => {
+       res.send('Hello World!')
+     })
+
+     app.listen(port, () => {
+       console.log(`Example app listening on port ${port}`)
+     })
+
+     We have a directory called public inside which we have 'harry.txt' file with 'Harry is a good boy' written inside it.
+     public
+     |
+     └── harry.txt
+
+     Explanation: 'app.use(express.static("public"))' line uses a built-in middleware function 'express.static' to serve static files (like HTML, CSS, JavaScript, images, etc.) from the public directory.
+                  We have 'harry.txt' in the public folder.
+                  When a GET request is made at 'http://localhost:3000/harry.txt' the request goes to the middleware. 
+                  The middleware takes the request and search for 'harry.txt' file in the 'public' directory.
+                  Than 'harry bhai' gets printed on the screen.
+473. How middleware works?
+     CODE:
+     const express = require('express')
+     const app = express()
+     const port = 3000
+
+     app.use((req, res, next) => {  // middleware-1
+         console.log('m1')
+         next()
+     })
+
+     app.use((req, res, next) => {  // middleware-2
+       console.log('m2')
+       next()
+     })
+
+     app.get('/', (req, res) => {   // router handler
+       res.send('Hello World!')
+     })
+
+     app.listen(port, () => {
+       console.log(`Example app listening on port ${port}`)
+     })
+
+     Explaination: The first request control goes to middleware-1 and it console logs 'm1' to nodemon server.
+                  Then the 'next()' is called and the control is passed to the middleware-2.
+                  It console logs 'm2' to the nodemon server and the control is passed to the 'app.get' function.
+                  Then the response 'Hello World' is send to the client through res.send in the router handler.
+
+     OUTPUT: 
+     nodemon server
+     m1
+     m2
+
+     http://localhost:3000/
+     Hello World!
+     
+474. What is the need of middleware?
+475. CODE:
+     const express = require('express')
+     const app = express()
+     const port = 3000
+
+     app.use((req, res, next) => {  // middleware-1
+         console.log('m1')
+         res.send("Neha hello");
+         next()
+     })
+
+     app.use((req, res, next) => {  // middleware-2
+       console.log('m2')
+       next()
+     })
+
+     app.get('/', (req, res) => {   // router handler
+       res.send('Hello World!')
+     })
+
+     app.listen(port, () => {
+       console.log(`Example app listening on port ${port}`)
+     })
+
+     Explanation: The request control goes to middleware-1 and console logs 'm1' on the nodemon server.
+                  Than the response 'Neha hello' is sends to the client through res.send. So no longer the control will move to the next middleware.
+
+     OUTPUT:
+     nodemon server
+     m1
+
+     http://localhost:3000/
+     Neha hello
+476. CODE:
+     const express = require('express')
+     const app = express()
+     const port = 3000
+     const fs = require("fs");
+
+     app.use(express.static("public"))
+
+     app.use((req, res, next) => { // middleware-1
+       console.log(req.headers);
+       req.harry = "I am Harry Bhai"
+       fs.appendFileSync("logs.txt", `${Date.now()} is a ${req.method}\n`);
+       console.log(`${Date.now()} is a ${req.method}\n`);
+       next()
+     })
+
+     app.use((req, res, next) => { // middleware-2
+       console.log('m2')
+       next()
+     })
+
+     app.get('/', (req, res) => { // router handler
+       res.send('Hello World!' + req.harry);
+     })
+
+     app.listen(port, () => {
+       console.log(`Example app listening on port ${port}`)
+     })
+
+     OUTPUT:
+
+     nodemon server:-
+     1716980024962 is a GET
+     m2
+
+     http://localhost:3000/ :-
+     Hello World!I am Harry Bhai
+
+     A 'logs.txt' file will be created with '1716980024962 is a GET' written inside it.
+477. Order of the middlewares is very important. The middleware that comes at the end is taken into consideration.
+     
+     Example:
+     const express = require('express')
+     const app = express()
+     const port = 3000
+
+     app.use((req, res, next) => { // middleware-1
+       req.name  ="I am harry bhai";
+       next()
+     })
+
+     app.use((req, res, next) => { // middleware-2
+       req.name="I am Rohan bhai";
+       next()
+     })
+
+     app.get('/', (req, res) => { // router handler
+       res.send('Hello World!' + req.name);
+     })
+
+     app.listen(port, () => {
+       console.log(`Example app listening on port ${port}`)
+     })
+
+     OUTPUT:
+     http://localhost:3000/:-
+     Hello World!I am Rohan bhai
+
+     This is printed as middleware-2 comes later which is taken into consideration for 'req.name'.
+478. Types of middleware-
+     a. Application-level middleware
+
+        app.use((req, res, next) => {
+          console.log('Time:', Date.now())
+          next()
+        })
+     b. Router-level middleware
+
+        router.use((req, res, next) => {
+          console.log('Time:', Date.now())
+          next()
+        })
+     c. Error-handling middleware
+
+        app.use((err, req, res, next) => {
+          console.error(err.stack)
+          res.status(500).send('Something broke!')
+        })
+     d. Built-in middleware
+
+        app.use(express.static("public"))
+     e. Third-party middleware
+
+        const cookieParser = require('cookie-parser')
+
+        // load the cookie-parsing middleware
+        app.use(cookieParser())
+                                                        ejs (Embedded JavaScript)
+479. We use EJS to create dynamic HTML pages using JavaScript.
+480. Lets's suppose we have an 'index.html' file we must write it as 'index.ejs'.
+481. We have to keep the 'index.ejs' file inside a views folder. The files and folder arrangement will be:
+    
+     Video 92/
+     ├── views/
+     │   └── index.ejs
+     └── index.js
+
+482. How do we link 'NodeJS' file to 'ejs' file?
+
+     NodeJS file:-
+     const express = require('express')
+     const app = express()
+     const port = 3000
+
+     app.set('view engine', 'ejs'); // This line is must
+                                                      ______________________________________
+     app.get('/', (req, res) => {                    |                                      |
+       let siteName = "Adidas"           ____________|___________________________           |
+       let searchText = "Search Now"    |            |                           |          |
+       res.render("index", {siteName: siteName, searchText: searchText})         |          |
+     })                                                                          |          |
+                                                                                 |          |
+     app.listen(port, () => {                                                    |          |
+       console.log(`Example app listening on port ${port}`)                      |          |
+     })                                                                          |          |
+                                                                                 |          |
+     ejs file:-                                                                  |          |
+     <!doctype html>                                                             |          |
+     <html lang="en">                                                            |          |
+       <head>                                                                    |          |
+         <meta charset="utf-8">                                                  |          |
+         <meta name="viewport" content="width=device-width, initial-scale=1">    |          |
+         <title>ejs demo</title>                                                 |          |
+       </head>        ___________________________________________________________|          |                                                       
+       <body>        |                   ___________________________________________________|                                                   |
+         <h1><%= siteName %></h1>       |
+         <button type="submit"><%= searchText %></button>
+       </body>
+     </html>
+
+     OUTPUT: 
+     http://localhost:3000/ :-
+     'Adidas' will be written as siteName and inside the button 'Search Now' will be written.
+483. partial in ejs: Let's suppose we have the navbar html code inside a 'navbar.ejs' file.
+                     The 'navbar.ejs' file is inside the views folder.
+                     Below is the files and folder structure.
+     Video 92/
+     ├── views/
+     │   └── index.ejs
+     |   └── navbar.ejs
+     └── index.js
+
+     NodeJS file(index.js):
+     const express = require('express')
+     const app = express()
+     const port = 3000
+
+     app.set('view engine', 'ejs');
+
+     app.get('/', (req, res) => {
+       let siteName = "Adidas"
+       let searchText = "Search Now"
+       res.render("index", {siteName: siteName, searchText: searchText, arr})
+     })
+
+     app.listen(port, () => {
+       console.log(`Example app listening on port ${port}`)
+     })
+
+     navbar.ejs file:
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container-fluid">
+          <a class="navbar-brand" href="#"><%= siteName %></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                         aria-expanded="false">
+                         Dropdown
+                         </a>
+                         <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="#">Action</a></li>
+                         <li><a class="dropdown-item" href="#">Another action</a></li>
+                         <li>
+                              <hr class="dropdown-divider">
+                         </li>
+                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                         </ul>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+               </ul>
+               <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="<%= searchText %>" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+               </form>
+          </div>
+     </div>
+     </nav>  
+
+     index.ejs file:
+     <!doctype html>
+     <html lang="en">
+
+     <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap demo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     </head>
+
+     <body>
+     <%- include('navbar') %>---------------------------------------------------------------------------------------To include the navbar code from navbar.ejs
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+     </script>
+     </body>
+
+     </html>
+                                                        MongoDB
+484. MongoDB is a document based database.
+485. MongoDB stores persistant data.
+486. Some commands in mongoDB:
+     a. 'show databases' - It will show all the databases.
+     b. 'use databaseName' - It will switch to the database that we want to work on.
+     c. 'db.collectionName.find()' - It will show us all the documents of a particular collection.
+     d. 'db.collectionName.insertOne({name:"JavaScript"})' - It will insert documents into the collection.
+                                                             The documents are JSON files.
+     e. 'db.createCollection("collectionName")' - It will create a collection.
+     f. 'db.courses.find({price:0}).count()' - It will print the number of documents that have price 0.
+     g. 'db.courses.findOne({price:0})' - This will return only the 1st document whose price is 0.
+487. CRUD(CREATE, READ, UPDATE, DELETE ) Operations in MongoDB
+     a. CREATE and INSERT in MongoDB
+
+        Example(insertOne):
+        db.createCollection("courses")
+
+        db.courses.insertOne({
+            name: "Harrys web dev free course",
+            price: 0,
+            assignment: 12,
+            projects: 45
+        })
+
+        A collection name 'courses' is created and data as a document is inserted by using 'insertOne'.
+
+        Example(insertMany):
+        db.courses.insertMany([
+          {
+               "name": "Grace's PHP Development",
+               "price": 0,    
+               "assignment": 10,
+               "projects": 30
+          },   
+          {
+               "name": "Hank's Rust Programming",
+               "price": 0,
+               "assignment": 12,
+               "projects": 40
+          },
+          {
+               "name": "Ivy's Kotlin Mastery",
+               "price": 0,
+               "assignment": 14,
+               "projects": 42
+          }
+        ])
+
+        'insertMany()' will inserts many documents(data) at a time.
+     b. READ Operation
+
+        Example(find):
+        db.courses.find({price:0})
+       
+        It will print all the documents in the collection where the price is 0.
+
+        Example(count):
+        db.courses.find({price:0}).count() 
+
+        It will print the number of documents in the collection that have price 0.
+
+        Example(toArray):
+        db.courses.find({price:0}).toArray()
+
+        This will print all the documents in the collection whose price is 0, in an array form.
+
+        Example(findOne):
+        db.courses.findOne({price:0})
+
+        This will return only the 1st document in the collection whose price is 0.
+
+     c. UPDATE Operations
+      
+        Example(updateOne):
+        db.courses.updateOne({price: 0}, {$set:{price: 100}})
+
+        This will update only the 1st document in the collection whose price is 0 to price 100.
+
+        Example(updateMany):
+        db.courses.updateMany({price: 0}, {$set:{price: 1000}})
+
+        This will update all the documents in the collection whose price was 0 to price 1000.
+     
+     d. DELETE Operations
+
+        Example(deleteOne):
+        db.courses.deleteOne({price: 100})
+
+        This will delete the 1st document in the collection whose price is 100.
+
+        Example(deleteMany):
+        db.courses.deleteMany({price: 100})
+
+        This will delete all the documents in the collection whose price is 100.
+
+                                                        Mongoose
+488. It is a package. We can connect expressJS to MongoDB using Mongoose. 
+489. Mongoose provides a schema based solution. Typecasting, validation and query building becomes easier.
+490. Creating schema and seeking validation in Mongoose:
+
+                                 ExpressJS(main.js)                                                   mongoose File(Todo.js)
+     // imports the mongoose module, which is an Object Data Modeling                           import mongoose from "mongoose";
+     // (ODM) library for MongoDB and Node.js.                                                  const TodoSchema = new mongoose.Schema({
+     import mongoose from "mongoose";                                                                 title: String,
+     import express from "express";                                                                   desc: String,
+     import { Todo } from "./models/Todo.js";                                                         isDone: Boolean,
+                                                                                                      days: Number,
+     // mongoose.connect() is an asynchronous function that connects                            });
+     // to the MongoDB instance.  
+     // The connection string "mongodb://localhost:27017/" specifies                            export const Todo = mongoose.model('Todo', TodoSchema);
+     // that the MongoDB server is running on localhost (the local machine) 
+     // on the default port 27017. 
+     // The await keyword indicates that the code should wait for the 
+     // connection to be established before proceeding.   
+     // todo is a database                                                                
+     let conn = await mongoose.connect("mongodb://localhost:27017/todo") 
+     const app = express()
+     const port = 3000
+
+     app.get('/', (req, res) => {
+       const todo = new Todo({
+           title: "Hey first todo",
+           desc: "Description of 1st todo",
+           isDone: false,
+           days: Math.floor(Math.random() * 45 + Math.random())
+       });
+      todo.save()
+      res.send('Hello World!')
+     })
+
+     app.get('/a', async (req, res) => {
+     let todo = await Todo.findOne({})
+       res.json({title: todo.title, desc: todo.desc})
+     })
+
+     app.listen(port, () => {
+       console.log(`Example app listening on port ${port}`)
+     })
+
+     Explanation:  
+     Before client request:-
+       In the 'main.js' file the modules 'mongoose' and 'express' are imported.
+       Than a named file 'Todo' is imported from the path './models/Todo.js'.
+       The code inside 'Todo.js' is executed and loaded.
+
+       Execution of 'Todo.js' file:
+       First mongoose is imported.
+       Than a schema is build using 'mongoose.Schema()'. '.Schema' is a mongoose constructor.
+       Inside the constructore we will define the structure of the documents that we want to create inside the collection.
+       We define that the document should contain the fields title, desc, isDone, and days.
+       'title' shoul accept only string, 'desc' should accept only string, 'isDone' should accept only Boolean and days should accept only Number.
+       The newly created schema instance is assigned to the constant 'TodoSchema'.
+       Than 'mongoose.model()' is called to create a model based on the schema 'TodoSchema'.
+       'mongoose.model()' takes two arguments: the first argument is the name of the model that is 'Todo' and the second argument is the schema 'TodoSchema'.
+       Than the model created from 'mongoose.model()' is stored in the variable 'Todo'.
+       The Todo model is exported to be imported in other files as a module.
+
+       Back to the 'main.js' file.
+       The model exported in 'Todo.js' is imported in 'main.js'.
+       Using 'mongoose.connect' to connect to the mongoDB database. 
+       A string is passed into 'mongoose.connect()' as an argument. The connection string specifies that the MongoDB server is running on localhost at the default port 27017, and the database to use is named todo.
+       'await' is used here because mongoose.connect returns a promise, and we want to wait until the connection is established before proceeding.
+       Once the connection is established the connection object is stored inside the 'conn' variable.
+       Than coming to 'app.get()' it sets up a route handler for GET requests to the root URL '/'.
+       Through 'app.listen' a server is started on port number 3000 and it waits for a get request.
+
+       After client request:-
+       Inside the 'app.get' function a new Todo instance is created with the title, desc, isDone and days for the document. 
+       The new document is stored into the variable 'todo'.
+       The 'todo' document is saved to the MongoDB database.
+       Than the client receives the message 'Hello World!'.
+
+       OUTPUT:
+       On MongoDB:
+       A database named 'todo' is created with collectionName 'todos'. Than inside that a document is created with the data:
+       title: "Hey first todo",
+       desc: "Description of 1st todo",
+       isDone: false,
+       days: 34
+
+       On 'http://localhost:3000/':
+       Hello World!
+
+                                                              Tailwind CSS
+491. For documentation reference : https://tailwindcss.com/docs/installation
+492. For rough purpose https://play.tailwindcss.com/.                                                              
+491. ChatGPT uses Tailwind CSS.
+492. There's no headache of writing CSS seperately.
+493. It helps in rapid website development.
+494. Here we can do coding only in the html file.
+495. Setting up Tailwind CSS project:
+
+     STEP-1: Initialize a npm project: npm init -Y
+
+     STEP 2: Run the following commands in the terminal:
+
+             npm install -D tailwindcss
+             npx tailwindcss init 
+
+     STEP 3: Update tailwind.conf.js file to include this line: content: ["*.html"]
+
+     STEP 4: Create src/input.css to include:
+
+             @tailwind base;
+             @tailwind components;
+             @tailwind utilities;
+
+     STEP 5: Run the following command : npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+     STEP 6: Include the src/output.css file to your html using 'link:css' element like this '<link rel="stylesheet" href="./src/output.css">'.
+
+                                                               Hosting
+495. Hosting - It refers to the process of storing and making web content accessible on the internet.
+496. Types of hosting:
+     a. Shared hosting - many users using the same computer with different passwords and usernames. Users share the resource( virtual computer ). It is relatively slow.
+     b. Dedicated hosting - Only one user gets access over the whole computer. 
+     c. Managed hosting - Managed hosting refers to a type of web hosting service where the hosting provider takes care of all technical aspects of managing and maintaining the server infrastructure on behalf of the client. This includes tasks such as server setup, configuration, monitoring, security updates, backups, and technical support.
+
+
+                                                            ReactJS
+497. ReactJS is a JavaScript library for building single page websites.
+498. Creating a react app : 'npx create-react-app appName' write this in the terminal
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Extras
+1. background-position - It sets the starting position of a background image.
+2. The first value is the horizontal position and the second value is the vertical position.
+3. background-position: center center; - To get the background at center both horizontally and vertically.
+4. background-position: right top; - To get the background at right horizontally and top vertically.
+5. background-position: left top
+                        left center
+                        left bottom
+                        right top
+                        right center
+                        right bottom
+                        center top
+                        center center
+                        center bottom
+6. To generate a random number between two integers a and b:
+   let randomNumber = a + Math.random()*(b-a);
+   randomNumber = Math.floor(randomNumber);
+7. JavaScript callbacks, promises, async await
+                                       Reference
+                              1     console.log(1)
+                              2     console.log(2)
+                              3     API function // Takes 5 mins to execute
+                              4     console.log(3)
+
+   1.Synchronous function OUTPUT:
+     1
+     2
+     wait for 5 mins for API function to execute completely
+     output of API function
+     3
+
+   2.Asynchronous function OUTPUT:
+     1
+     2
+     3 (API function executing side by side)
+     After 5 mins
+     output of API function
+
+   3.setTimeout - This function decides after how much time a function will be executed.
+
+   Method-1 to write setTimeout function:
+   function hello()
+    {
+      console.log("hello")
+    }
+
+    setTimeout(hello, 2000) // 2 sec = 2000milliseconds
+
+   Method-2 to write setTimeout function:
+   setTimeout(() => {
+       console.log("hello");
+   }, 2000);
+
+    4. Example of setTimeout function as Asynchronous function:
+      console.log(1)
+      console.log(2)
+      setTimeout(() => {
+          console.log("hello");
+      }, 4000);
+      console.log(3)
+      console.log(4)
+
+      OUTPUT:
+      1
+      2
+      3
+      4
+      hello //This will be printed at the end because the setTimeout function will be executed only after 4 secs.
+    5. callbacks
+       
+       Synchronous program callback Example:
+       Method-1
+       function sum(a,b) {
+           console.log(a+b);
+       }
+
+       function calculator(a,b, sumCallback) {
+           sumCallback(a,b);
+       }
+
+       calculator(3,5,sum);
+
+       Method-2
+       function calculator(a,b, sumCallback) {
+           sumCallback(a,b);
+       }
+
+       calculator(3,5,(a,b)=>{
+        console.log(a+b);
+       });
+
+       Asynchronous program callback Example:
+       const hello =() => {
+         console.log("hello");
+       }
+
+       setTimeout(hello, 3000);
+
+       7. Where to use callbacks?
+          function getData(dataId) {
+             setTimeout(()=>{
+                console.log("data", dataId);  
+             }, 2000);
+          }
+
+          getData(1);
+          getData(2);
+          getData(3);
+
+          Explanation: In the above code 1, 2 and 3 will be printed at a time. We have set a timer of 2 secs and each of the getData function's timer for 2 sec will be started at a time. So 1, 2, 3 will be printed at a time.
+          But let's suppose we want to print 2 after we print 1 and print 3 after we print 2. We can achieve that using callbacks.
+
+          Solution Code using callbacks:
+          getData(1,()=>{
+             console.log("getting data 2...")
+             getData(2, ()=>{
+                console.log("getting data 3...")
+                getData(3);
+             });
+          });         
+       6. callback hell - Nested callbacks stacked below one another forming a pyramid structure.
+                          The code becomes difficult to understand.
+          getData(1,()=>{ // callback function-1
+             console.log("getting data 2...")
+             getData(2, ()=>{ //callback function-2
+                console.log("getting data 3...")
+                getData(3, ()=>{ //callback function-3
+                   console.log("get data 4...");
+                   getData(4);
+                });
+             });
+          });
+       7. What is a solution to callback hell?
+          We can overcome callback hell by using promises.
+       8. Promises
+          Promises are JS objects. They are the solution to callback hell.
+       9. Creating a promise:
+          let promise = new Promise((resolve, reject) => {...})
+                                     |______________|
+                                             |
+                                   Function with two handlers
+          *Resolve and reject are callbacks provided by JS
+      10. There are 3 states of a promise:
+          a. pending
+          b. fulfilled
+          c. rejected
+      11. Promise pending state:
+          let promise = new Promise((resolve, reject)=>{
+              console.log("I am a promise");
+          })
+
+          OUTPUT:
+          Promise {<pending>}
+          [[Prototype]]: Promise
+          [[PromiseState]]: "pending"
+          [[PromiseResult]]: undefined
+      12. Promise fulfilled state:
+          let promise = new Promise((resolve, reject)=>{
+            console.log("I am a promise");
+            resolve("success");
+          })
+
+          OUTPUT:         
+          Promise {<fulfilled>: 'success'}
+          [[Prototype]] : Promise
+          [[PromiseState]]: "fulfilled"
+          [[PromiseResult]]: "success"
+      13. Promise rejected state:
+          let promise = new Promise((resolve, reject)=>{
+              console.log("I am a promise");
+              reject("some error");
+          })
+          OUTPUT:
+          Promise {<rejected>: 'some error'}
+          [[Prototype]]: Promise
+          [[PromiseState]]: "rejected"
+          [[PromiseResult]]: "some error"
+      14. How to use promise in functions (simple way)?
+          Code:
+          function getData(dataId) {
+              return new Promise((resolve, reject) =>{
+                  setTimeout(()=>{
+                      console.log("data", dataId);
+                      resolve("success");
+                  }, 5000);
+              })
+          }
+
+          let promise = getData(123);
+          console.log(promise);
+
+          Explanation:
+          The above way we can integrate promise with a function. 
+          The function will return a Promise that will be stored in the variable 'promise'.
+
+          OUTPUT (Before the completion of 5 secs)
+          Promise {<pending>}
+          [[Prototype]]: Promise
+          [[PromiseState]]: "pending"
+          [[PromiseResult]]: undefined
+
+          OUTPUT (After the completion of 5 secs)
+          data 123
+          Promise {<fulfilled>: 'success'}
+          [[Prototype]]: Promise
+          [[PromiseState]]: "fulfilled"
+          [[PromiseResult]]: "success"
+      15. What to do after the promise is either resolved or rejected?
+          If the promise is resolved or fulfilled we use .then() function to do the further task.
+          If the promise is rejected than we use .catch() function to catch the error.
+
+          CASE-1(Promise resolved ):
+          const getPromise = () => {
+                return new Promise((resolve, reject) =>{
+                  console.log("I am a promise");
+                  resolve("success");
+                })
+          }
+
+          let promise = getPromise();
+          console.log(promise);
+          promise.then((res)=>{  // res is the variable that stores the resolve message
+             console.log("promise fulfilled", res);
+          });
+
+          Explanation:
+          In the above code the getPromise function returns a promise. The promise is stored in the 'Promise' variable.
+          As the promise is resolved so we use '.then()' function to perform the further task. 
+          So, 'promise fulfilled success' gets printed.
+
+          OUTPUT:
+          I am a promise
+
+          Promise {<fulfilled>: 'success'}
+          [[Prototype]]: Promise
+          [[PromiseState]]: "fulfilled"
+          [[PromiseResult]]: "success"
+
+          promise fulfilled success
+
+          CASE-2(promise rejected):
+          const getPromise = () => {
+              return new Promise((resolve, reject) =>{
+                console.log("I am a promise");
+                reject("error");
+              })
+          }
+
+          let promise = getPromise();
+          console.log(promise);
+          promise.catch((err)=>{ // err is the variable that stores the reject message
+          console.log("promise rejected", err);
+          });
+
+          Explanation:
+          In the above code the function 'getPromise' returns a promise. The promise is stored in the variable 'Promise'.
+          As the promise gets rejected so we will use '.catch()' function to do the further task.
+          So, 'promise rejected error' gets printed.
+
+          OUTPUT:
+          I am a promise
+
+          Promise {<rejected>: 'error'}
+          [[Prototype]]: Promise
+          [[PromiseState]]: "rejected"
+          [[PromiseResult]]: "error"
+
+          promise rejected error
+      16. Without Promise chaining
+          function asyncFunction1() {
+            return new Promise((resolve, reject)=>{
+               setTimeout(() => {
+                    console.log("data1");
+                    resolve("success");
+               }, 4000);
+            })
+          }
+
+          function asyncFunction2() {
+            return new Promise((resolve, reject)=>{
+               setTimeout(() => {
+                    console.log("data2");
+                    resolve("success");
+               }, 4000);
+            })
+          }
+
+          console.log("Fetching data1...")
+          let p1 = asyncFunction1();
+          p1.then((res)=>{
+             console.log(res);
+          })
+
+          console.log("Fetching data2...")
+          let p2 = asyncFunction2();
+          p2.then((res)=>{
+             console.log(res);
+          })
+
+          Explanation: In the above code there are two asynchronous functions. Each of the functions gets executed after 4 secs.
+          The first asynchronous function 'asyncFunction1' returns a promise (pending state) to the variable 'p1'.
+          Than the second asynchronous function 'asyncFunction2' retunrs a promise (pending state) to the variable 'p2'.
+          Both the functions 'asyncFunction1' and 'asyncFunction2' gets executed at the same time after 4 secs.
+
+          OUTPUT(Before 4 secs):
+          Fetching data1...
+          Fetching data2...
+
+          OUTPUT(After 4 secs):
+          data1
+          success
+          data2
+          success
+      17. Using Promise chaining(If we want that, after function 1 gets executed than only we want to execute function 2 gets executed):
+          function asyncFunction1() {
+          return new Promise((resolve, reject)=>{
+               setTimeout(() => {
+                    console.log("data1");
+                    resolve("success");
+               }, 4000);
+          })
+          }
+
+          function asyncFunction2() {
+          return new Promise((resolve, reject)=>{
+               setTimeout(() => {
+                    console.log("data2");
+                    resolve("success");
+               }, 4000);
+          })
+          }
+
+          console.log("Fetching data1...")
+          let p1 = asyncFunction1();
+          p1.then((res)=>{
+             console.log(res);
+             console.log("Fetching data2...")
+             let p2 = asyncFunction2();
+             p2.then((res)=>{
+                console.log(res);
+             });
+          });
+
+          Explanation:
+          If we want that, after function 1 gets executed than only function 2 gets executed we can put the '.then()' function of 'asyncFunction2' inside '.then()' function of 'asyncFunction1'.
+          This method is called promise chaining.
+
+          OUTPUT(Before 4 secs):
+          Fetching data1...
+
+          OUTPUT(After 4 secs is coz of (delay by asyncFunction1)):
+          data1
+          success
+          Fetching data2...
+
+          OUTPUT(After 8 secs is coz of (delay by asyncFunction1 + delay by asyncFunction2)):
+          data2
+          success
+      18. Let us solve the question that we have solve above by callback hell using promise chaining:
+          
+          WAY-1:
+          function getData(dataId) {
+            return new Promise((resolve, reject)=>{
+               setTimeout(()=>{
+                    console.log("data", dataId);
+                    resolve("success");
+               }, 2000);
+            })
+          }
+
+          let promise1 = getData(1);
+
+          promise1.then((res)=>{
+            console.log(res);
+            let promise2 = getData(2);
+            promise2.then((res)=>{
+               console.log(res);
+            })
+          })
+
+          Explanation: The function getData(1) returns a promise that is stored in the variable 'promise1'.
+          The function 'getData(1)' gets executed and the 'res' gets printed.
+          The function getData(2) returns a promise that is stored in the variable 'promise2'.
+          The function 'getData(2)' gets executed and the 'res' gets printed.
+
+          OUTPUT(After 2 secs (delay coz of getData(1) function)):
+          data 1
+          success
+
+          OUTPUT(After 4 secs (delay coz of getData(1) function + delay coz of getData(2) function)):
+          data 2
+          success
+
+          WAY-2:
+          function getData(dataId) {
+          return new Promise((resolve, reject)=>{
+               setTimeout(()=>{
+                    console.log("data", dataId);
+                    resolve("success");
+               }, 2000);
+          })
+          }
+
+          getData(1).then((res)=>{
+             console.log(res);
+             getData(2).then((res)=>{
+               console.log(res);
+             })
+          })
+
+          WAY-3(Most used way):
+          function getData(dataId) {
+              return new Promise((resolve, reject) => {
+                  setTimeout(() => {
+                      console.log("data", dataId);
+                      resolve("success");
+                  }, 2000);
+              })
+          }
+
+          getData(1)
+             .then((res) => {
+               return getData(2)
+             })
+             .then((res) => {
+               console.log(res);
+             });
+
+          Explanation: The function getData(1) will return a promise and after 2 secs it gets executed. 
+          So, after the execution the 'then' function of 'getData(1)' will be executed.
+          Inside the 'then' function of 'getData(1)' the 'getData(2)' will return a promise and after 2 secs it gets executed.
+          So, after the execution the 'then' function of 'getData(2)' will run and 'res' i.e, 'success' will be printed.
+
+          OUTPUT(After 2 secs):
+          data 1
+
+          OUTPUT(After 4 secs):
+          data 2
+          success
+      19. Async-Await - A better approach than promise chaining.
+          async function always return a promise.
+          We can make a simple function to return a promise just by adding 'async' keyword before it's name.
+
+          Example-1: 
+          async function hello() {
+              console.log("hello Lewis");
+          }
+
+          Explanation: hello() was a normal function before. But after adding the async function it returns a promise.
+
+          OUTPUT:
+          hello Lewis
+
+          Promise {<fulfilled>: undefined}
+          [[Prototype]]: Promise
+          [[PromiseState]]: "fulfilled"
+          [[PromiseResult]]: undefined
+
+      20. Await keyword: Await pauses the execution of its surrounding async function until the promise is settled.
+                         await keyword can only be used inside asynchronous function.
+          function api() {
+            return new Promise((resolve, reject)=>{
+               setTimeout(() => {
+               console.log("weather data");
+               resolve(200);
+               }, 2000);
+            });
+          }
+
+          async function getWeatherData()
+          {
+            await api(); // 1st call
+            await api(); // 2nd call
+          }
+
+          Explanation: The above function 'api()' is a asynchronous function that will take 2 secs to get excecuted.
+          We create a function 'getWeatherData()' using with async keyword. 
+          We want to call the 'api()' function twice with an interval of 2 secs.
+          So, we use the await keyword infront of it. 
+          While calling the 'api()' function for the 1st time the await keyword pauses the execution of its surrounding async function until the promise is settled.
+          Than only the 2nd calling of the 'api()' happens.
+
+          OUTPUT(After 2secs):
+          weather data
+         
+          OUTPUT(After 4 secs):
+          weather data
+      21. Let us now solve the question that we have solved by callback hell and function chaining now using async-await:
+          function getData(dataId) {
+             return new Promise((resolve, reject) => {
+               setTimeout(() => {
+                    console.log("data", dataId);
+                    resolve("success");
+               }, 2000);
+             })
+          }
+
+          async function getAllData() {
+            await getData(1);
+            await getData(2);
+            await getData(3);
+          }
+
+          getAllData();
+
+          Explanation: In the above code the 'getData()' function is set to console 'data dataId' with a delay of 2 secs.
+          We have to call the 'getData()' function 3 times each with different dataId of 1, 2, 3.
+          We create a 'getAllData()' function that is async so cal we call call the 'getData()' function 3 times inside it.
+          We will write await keyword infront of each 'getData()' callback so that each can execute with an interval of 2 secs.
+
+          OUTPUT(After 2 secs):
+          data 1
+
+          OUTPUT(After 4 secs):
+          data 2
+
+          OUTPUT(After 6 secs):
+          data 3
+      22. In the above code the function infront of which we had written the async keyword has to be called for it to be excecuted.
+          To avoid this unecessary function call we have to use IIFE(Immediately Invoked Function Expression).
+      23. IIFE - It is a function that is called immediately as soon as it is defined.
+      24. Ways to write an IIFE:
+          a. (function (){
+               //...
+             })();
+          b. (() => {
+              //...
+             })();
+          c. (async () => {
+              //...
+             })();
+      25. Rewriting the above code using IIFE:
+          function getData(dataId) {
+            return new Promise((resolve, reject) => {
+               setTimeout(() => {
+                    console.log("data", dataId);
+                    resolve("success");
+               }, 2000);
+            })
+          }
+
+          (async function ()  {
+            console.log("getting data 1...");
+            await getData(1);
+            console.log("getting data 2...");
+            await getData(2);
+            console.log("getting data 3...");
+            await getData(3);  
+          })();
+      26. Comparison between callback hell, promise chaining and async - await:
+
+      Callback Hell:
+      function getData(dataId, getNextData) {
+          setTimeout(()=>{
+              console.log("data", dataId);
+              if(getNextData){
+                  getNextData();
+              }
+          }, 2000);
+      }
+
+      getData(1,()=>{
+          console.log("getting data 2...")
+          getData(2, ()=>{
+              console.log("getting data 3...")
+              getData(3, ()=>{
+                  console.log("get data 4...");
+                  getData(4);
+              });
+          });
+      });
+
+     Promise chaining:
+     function getData(dataId) {
+       return new Promise((resolve, reject) => {
+          setTimeout(() => {
+               console.log("data", dataId);
+               resolve("success");
+          }, 2000);
+       })
+     }
+
+     getData(1).then((res) => {
+          return getData(2)
+     }).then((res) => {
+          return getData(3);
+     }).then((res)=>{
+     console.log(res);
+     });
+
+     Async-Await(Using IIFE):
+     function getData(dataId) {
+       return new Promise((resolve, reject) => {
+          setTimeout(() => {
+               console.log("data", dataId);
+               resolve("success");
+          }, 2000);
+       })
+     }
+
+     (async function ()  {
+      console.log("getting data 1...");
+      await getData(1);
+      console.log("getting data 2...");
+      await getData(2);
+      console.log("getting data 3...");
+      await getData(3);  
+     })();     
+8. Async arrow function syntax:
+   const functionName = async () => {
+    // Function body
+   };
+
+
+
+          
+
+
+
+
+          
+
+
+
+
+
+
+     
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

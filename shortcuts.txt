@@ -1,0 +1,59 @@
+1. ALT + SHIFT + DOWN ARROW KEY = To copy and paste the present line down
+
+2. WINDOWS + SHIFT + S = Snipping Tool 
+
+3. CTRL+/ = For comment and uncomment
+
+4. SHIFT + TAB = To remove one indent.
+
+5. WINDOWS + . = To get the emojis
+
+6. .card>.card*3 for:
+ 
+    <div class="card">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+7. ALT + DOWNWARD ARROW KEY = To downward shift a whole line.
+
+8. ALT + UPWARD ARROW KEY = To upward shift a whole line.
+
+9. CTRL + SHIFT + I = To open the 'inspect' on any web page.
+
+10. CTRL + K + J = To expand all lines.
+
+11. CTRL + K + 0 = To collapse all lines.
+
+12. CTRL + F = To find something in the terminal
+
+
+
+
+Figma Shortcuts
+
+1. CTRL + SCROLL MOUSE = For Zoom on figma
+
+2. CTRL + LEFT CLICK ON MOUSE = For moving on figma
+
+
+
+Creating snippets
+1. console.log Snippet:
+	"Print to console": {
+		"prefix": "clog",
+		"body": [
+			"console.log('$1');",
+			"$2"                     // This takes the cursor to new line after clicking on tab.
+		],
+		"description": "Log output to console"
+	}
+
+2. alert Snippet:
+	"alert":{
+		"prefix": "alt",
+		"body":[
+			"alert(''$1);",
+			"$2"                // This takes the cursor to new line after clicking on tab.
+		],
+	}
